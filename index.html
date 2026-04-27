@@ -1,0 +1,3494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="Dr. Rajendra Kumar Asati — Experienced General Physician in Tiroda with 27+ years of practice. Two clinic locations at Kachewani Bus Stop and Berdipar."/>
+<meta name="robots" content="index, follow"/>
+<title>Dr. Rajendra Kumar Asati — General Physician, Tiroda</title>
+<meta name="theme-color" content="#c8a96e"/>
+<meta name="mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-title" content="Dr. Asati"/>
+<link rel="manifest" href="data:application/json,%7B%22name%22%3A%22Dr.%20Rajendra%20Kumar%20Asati%22%2C%22short_name%22%3A%22Dr.%20Asati%22%2C%22start_url%22%3A%22.%22%2C%22display%22%3A%22standalone%22%2C%22background_color%22%3A%22%23080b12%22%2C%22theme_color%22%3A%22%23c8a96e%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22data%3Aimage%2Fsvg%2Bxml%2C%253Csvg%2520xmlns%3D%2527http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%2527%2520viewBox%3D%25270%25200%252064%252064%2527%253E%253Ccircle%2520cx%3D%252732%2527%2520cy%3D%252732%2527%2520r%3D%252732%2527%2520fill%3D%2527%2523c8a96e%2527%2F%253E%253Ctext%2520x%3D%252732%2527%2520y%3D%252740%2527%2520text-anchor%3D%2527middle%2527%2520font-size%3D%252728%2527%253E%25E2%2580%258D%25E2%259A%2595%25EF%25B8%258F%253C%2Ftext%253E%253C%2Fsvg%253E%22%2C%22sizes%22%3A%22192x192%22%2C%22type%22%3A%22image%2Fsvg%2Bxml%22%7D%5D%7D"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<style>
+  :root {
+    --bg: #080b12;
+    --surface: #0e1220;
+    --card: #121828;
+    --border: #ffffff0f;
+    --gold: #c8a96e;
+    --gold-light: #e2c98f;
+    --gold-dim: #c8a96e22;
+    --blue: #3b82f6;
+    --blue-dim: #3b82f618;
+    --text: #eef0f5;
+    --muted: #7a80a0;
+    --soft: #b0b8d0;
+    --green: #25d366;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  button, a { -webkit-tap-highlight-color: transparent; }
+  html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Outfit', sans-serif;
+    overflow-x: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+    animation: pageIn 0.5s ease both;
+  }
+  @keyframes pageIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  
+
+  /* ── BG GLOW ── */
+  .bg-glow {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    background:
+      radial-gradient(ellipse 60% 40% at 20% 10%, #1a2a4a44 0%, transparent 70%),
+      radial-gradient(ellipse 50% 35% at 80% 80%, #2a1a0a22 0%, transparent 70%);
+  }
+
+  /* ── NAV ── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 200;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 60px;
+    background: #080b12dd;
+    backdrop-filter: blur(24px);
+    border-bottom: 1px solid var(--border);
+    transition: padding 0.3s;
+  }
+  nav.scrolled { padding: 12px 60px; }
+
+  .nav-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    color: var(--gold);
+  }
+  .nav-logo span {
+    color: var(--muted);
+    font-size: 0.7rem;
+    display: block;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 36px;
+    list-style: none;
+  }
+  .nav-links a {
+    color: var(--soft);
+    text-decoration: none;
+    font-size: 0.83rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    position: relative;
+  }
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; left: 0; right: 0;
+    height: 1px;
+    background: var(--gold);
+    transform: scaleX(0);
+    transition: transform 0.3s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+  .nav-links a:hover::after { transform: scaleX(1); }
+
+  .nav-right { display: flex; align-items: center; gap: 16px; }
+
+  .nav-cta {
+    background: var(--gold);
+    color: #080b12;
+    border: none;
+    padding: 10px 22px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s;
+  }
+  .nav-cta:hover { background: var(--gold-light); transform: translateY(-1px); box-shadow: 0 6px 20px #c8a96e33; }
+
+  /* Hamburger */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 4px;
+  }
+  .hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--gold);
+    transition: all 0.3s;
+  }
+  .hamburger.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+  .hamburger.open span:nth-child(2) { opacity: 0; }
+  .hamburger.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+  /* Mobile menu */
+  .mobile-menu {
+    display: none;
+    position: fixed;
+    top: 70px; left: 0; right: 0;
+    background: #0e1220f5;
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border);
+    padding: 24px 24px 32px;
+    z-index: 199;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .mobile-menu.open { display: flex; }
+  .mobile-menu a {
+    color: var(--soft);
+    text-decoration: none;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+    transition: color 0.3s;
+  }
+  .mobile-menu a:hover { color: var(--gold); }
+  .mobile-menu .mob-cta {
+    background: var(--gold);
+    color: #080b12;
+    text-align: center;
+    padding: 14px;
+    font-weight: 600;
+    border-bottom: none;
+    margin-top: 8px;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 60px 80px;
+    gap: 60px;
+  }
+  .hero-content { flex: 1; max-width: 620px; }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--gold-dim);
+    border: 1px solid #c8a96e55;
+    color: var(--gold);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    padding: 7px 18px;
+    margin-bottom: 28px;
+    animation: fadeUp 0.7s ease both;
+  }
+  .hero-badge::before {
+    content: '';
+    width: 6px; height: 6px;
+    background: var(--gold);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(2.6rem, 5vw, 4.4rem);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    animation: fadeUp 0.8s 0.1s ease both;
+  }
+  .hero h1 .gold { color: var(--gold); }
+
+  .hero-title-sub {
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--muted);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+    animation: fadeUp 0.8s 0.2s ease both;
+  }
+
+  .hero-desc {
+    font-size: 1rem;
+    color: var(--soft);
+    line-height: 1.85;
+    max-width: 500px;
+    margin-bottom: 40px;
+    animation: fadeUp 0.8s 0.3s ease both;
+  }
+
+  .hero-stats {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 44px;
+    animation: fadeUp 0.8s 0.4s ease both;
+  }
+  .stat-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--gold);
+    line-height: 1;
+  }
+  .stat-label {
+    font-size: 0.72rem;
+    color: var(--muted);
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+
+  .hero-btns {
+    display: flex;
+    gap: 14px;
+    flex-wrap: wrap;
+    animation: fadeUp 0.8s 0.5s ease both;
+  }
+
+  .btn-primary {
+    background: var(--gold);
+    color: #080b12;
+    padding: 14px 30px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 0.88rem;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: inline-block;
+  }
+  .btn-primary:hover { background: var(--gold-light); transform: translateY(-2px); box-shadow: 0 12px 30px #c8a96e40; }
+
+  .btn-outline {
+    border: 1px solid var(--border);
+    color: var(--soft);
+    padding: 14px 30px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.88rem;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: inline-block;
+  }
+  .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+
+  .btn-wa {
+    background: var(--green);
+    color: #fff;
+    padding: 14px 30px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 0.88rem;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .btn-wa:hover { background: #1ebe55; transform: translateY(-2px); }
+
+  /* Hero card */
+  .hero-card {
+    flex: 0 0 360px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 38px;
+    position: relative;
+    animation: fadeUp 0.9s 0.3s ease both;
+  }
+  .hero-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--gold), transparent);
+  }
+  .hero-card-icon {
+    width: 60px; height: 60px;
+    background: var(--gold-dim);
+    border: 1px solid #c8a96e55;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    margin-bottom: 22px;
+  }
+  .hero-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+  }
+  .hero-card p { font-size: 0.85rem; color: var(--muted); line-height: 1.7; margin-bottom: 22px; }
+  .hours-list { list-style: none; }
+  .hours-list li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+    color: var(--soft);
+  }
+  .hours-list li:last-child { border-bottom: none; }
+  .hours-list li span { color: var(--gold); font-weight: 500; }
+
+  /* ── SECTIONS ── */
+  section { position: relative; z-index: 1; padding: 96px 60px; }
+  .section-label {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 14px;
+  }
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.9rem, 3.5vw, 2.9rem);
+    font-weight: 700;
+    line-height: 1.15;
+    margin-bottom: 14px;
+  }
+  .section-desc {
+    color: var(--soft);
+    font-size: 0.97rem;
+    line-height: 1.85;
+    max-width: 540px;
+    margin-bottom: 52px;
+  }
+  .divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--border), transparent);
+    margin: 0 60px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ── ABOUT ── */
+  .about { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+
+  .about-img-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .about-img-box::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, var(--gold-dim) 0%, transparent 50%);
+  }
+  .about-placeholder { font-size: 6rem; opacity: 0.12; }
+  .about-tag {
+    position: absolute;
+    bottom: -18px; right: -18px;
+    background: var(--gold);
+    color: #080b12;
+    padding: 18px 26px;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+  }
+  .about-tag span {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 400;
+    display: block;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 3px;
+  }
+  .about-content { padding-left: 20px; }
+  .about-feature { display: flex; gap: 16px; margin-bottom: 26px; }
+  .about-feature-icon {
+    width: 42px; height: 42px;
+    min-width: 42px;
+    background: var(--blue-dim);
+    border: 1px solid #3b82f622;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    margin-top: 2px;
+  }
+  .about-feature h4 { font-size: 0.97rem; font-weight: 600; margin-bottom: 5px; }
+  .about-feature p { font-size: 0.86rem; color: var(--muted); line-height: 1.7; }
+
+  /* ── SERVICES ── */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+  }
+  .service-card {
+    background: var(--card);
+    padding: 34px 30px;
+    transition: background 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+  .service-card::after {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 2px;
+    background: var(--gold);
+    transform: scaleX(0);
+    transition: transform 0.3s;
+  }
+  .service-card { transition: background 0.25s ease; }
+  .service-card:hover { background: #1a1f30; }
+  .service-card:hover::after { transform: scaleX(1); }
+  .service-icon { font-size: 1.9rem; margin-bottom: 18px; display: block; }
+  .service-card h3 { font-family: 'Playfair Display', serif; font-size: 1.1rem; margin-bottom: 10px; }
+  .service-card p { font-size: 0.84rem; color: var(--muted); line-height: 1.7; }
+
+  /* ── TESTIMONIALS ── */
+  .testimonials { background: var(--surface); border-top: 1px solid var(--border); }
+  .testi-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .testi-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 30px;
+    position: relative;
+    transition: border-color 0.3s, transform 0.3s;
+  }
+  .testi-card:hover { border-color: #c8a96e44; transform: translateY(-4px); }
+  .testi-stars { color: var(--gold); font-size: 1rem; margin-bottom: 14px; letter-spacing: 2px; }
+  .testi-text { font-size: 0.9rem; color: var(--soft); line-height: 1.75; margin-bottom: 20px; font-style: italic; }
+  .testi-author { font-size: 0.8rem; font-weight: 600; color: var(--gold); letter-spacing: 1px; text-transform: uppercase; }
+  .testi-location { font-size: 0.75rem; color: var(--muted); margin-top: 3px; }
+  .testi-quote {
+    position: absolute;
+    top: 20px; right: 24px;
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    color: var(--border);
+    line-height: 1;
+  }
+
+  /* ── HEALTH TIPS ── */
+  .tips { border-top: 1px solid var(--border); }
+  .tips-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+  .tip-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 26px 22px;
+    text-align: center;
+    transition: border-color 0.3s, transform 0.3s;
+  }
+  .tip-card:hover { border-color: #c8a96e44; transform: translateY(-3px); }
+  .tip-icon { font-size: 2rem; margin-bottom: 14px; display: block; }
+  .tip-card h4 { font-size: 0.92rem; font-weight: 600; margin-bottom: 8px; color: var(--gold); }
+  .tip-card p { font-size: 0.8rem; color: var(--muted); line-height: 1.65; }
+
+  /* ── CLINICS ── */
+  .clinics { background: var(--surface); border-top: 1px solid var(--border); }
+  .clinics-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+  .clinic-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 38px;
+    position: relative;
+    transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+  }
+  .clinic-card:hover { border-color: #c8a96e55; transform: translateY(-6px); box-shadow: 0 12px 40px #00000055; }
+  .clinic-num {
+    position: absolute;
+    top: 22px; right: 26px;
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #ffffff08;
+    line-height: 1;
+  }
+  .clinic-card-icon {
+    width: 50px; height: 50px;
+    background: var(--gold-dim);
+    border: 1px solid #c8a96e55;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+  }
+  .clinic-card h3 { font-family: 'Playfair Display', serif; font-size: 1.35rem; margin-bottom: 5px; color: var(--gold); }
+  .clinic-location { font-size: 0.82rem; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; margin-bottom: 22px; }
+  .clinic-detail { display: flex; align-items: flex-start; gap: 12px; margin-bottom: 13px; font-size: 0.88rem; color: var(--soft); }
+  .clinic-detail-icon {
+    width: 28px; height: 28px;
+    min-width: 28px;
+    background: var(--surface);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.85rem;
+    margin-top: 2px;
+  }
+  .clinic-wa-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--green);
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 0.82rem;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 18px;
+    transition: background 0.3s, transform 0.2s;
+  }
+  .clinic-wa-btn:hover { background: #1ebe55; transform: translateY(-2px); }
+
+  /* ── APPOINTMENT ── */
+  .appt-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: start; }
+  .appt-form {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 42px;
+    position: relative;
+  }
+  .appt-form::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--gold), var(--green));
+  }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .form-group { margin-bottom: 18px; }
+  .form-group label {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 7px;
+  }
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 12px 15px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.88rem;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus { border-color: var(--gold); box-shadow: 0 0 0 3px #c8a96e18; outline: none; }
+  .form-group input, .form-group select, .form-group textarea { transition: border-color 0.2s, box-shadow 0.2s; }
+  .form-group select option { background: var(--card); }
+  .form-group textarea { resize: vertical; min-height: 96px; }
+  .form-submit {
+    width: 100%;
+    background: var(--green);
+    color: #fff;
+    border: none;
+    padding: 16px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.93rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  .form-submit:hover { background: #1ebe55; transform: translateY(-2px); }
+  .success-msg {
+    display: none;
+    background: #0d2a1a;
+    border: 1px solid #2a6a3a;
+    color: #6fcf97;
+    padding: 14px 18px;
+    font-size: 0.87rem;
+    margin-top: 14px;
+    text-align: center;
+  }
+
+  .contact-block {
+    background: var(--card);
+    border: 1px solid var(--border);
+    padding: 26px;
+    margin-bottom: 16px;
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    transition: border-color 0.3s;
+  }
+  .contact-block:hover { border-color: #c8a96e44; }
+  .contact-block-icon {
+    width: 46px; height: 46px;
+    min-width: 46px;
+    background: var(--gold-dim);
+    border: 1px solid #c8a96e44;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem;
+  }
+  .contact-block h4 { font-size: 0.72rem; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--muted); margin-bottom: 5px; }
+  .contact-block p { font-size: 0.92rem; color: var(--text); line-height: 1.6; }
+  .contact-block a { color: var(--gold); text-decoration: none; }
+  .contact-block a:hover { color: var(--gold-light); }
+
+  /* ── FLOATING WA BUTTON ── */
+  .wa-float {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    z-index: 300;
+    width: 58px; height: 58px;
+    background: var(--green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    box-shadow: 0 4px 20px #25d36644;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: waBounce 2s 2s ease both;
+  }
+  .wa-float:hover { transform: scale(1.12); box-shadow: 0 6px 28px #25d36666; }
+  .wa-float::after {
+    content: '';
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    border: 2px solid #25d36644;
+    animation: waPulse 2s infinite;
+  }
+  @keyframes waPulse {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(1.4); opacity: 0; }
+  }
+  .wa-float-tooltip {
+    position: absolute;
+    right: 68px;
+    background: #1a2030;
+    border: 1px solid var(--border);
+    color: var(--text);
+    font-size: 0.78rem;
+    padding: 6px 14px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+  }
+  .wa-float:hover .wa-float-tooltip { opacity: 1; }
+  @keyframes waBounce {
+    0%   { transform: scale(0); opacity: 0; }
+    60%  { transform: scale(1.15); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+
+  /* ── BACK TO TOP ── */
+  #backToTop {
+    position: fixed;
+    bottom: 96px;
+    right: 30px;
+    z-index: 300;
+    width: 42px; height: 42px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--gold);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  #backToTop:hover { background: var(--gold); color: #080b12; }
+  #backToTop.show { display: flex; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #050810;
+    border-top: 1px solid var(--border);
+    padding: 44px 60px;
+    position: relative;
+    z-index: 1;
+  }
+  .footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 28px;
+  }
+  .footer-logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    color: var(--gold);
+  }
+  .footer-logo span { display: block; font-family: 'Outfit', sans-serif; font-size: 0.7rem; color: var(--muted); font-weight: 300; letter-spacing: 2px; text-transform: uppercase; margin-top: 4px; }
+  .footer-desc { font-size: 0.83rem; color: var(--muted); line-height: 1.7; max-width: 260px; margin-top: 12px; }
+  .footer-col h5 { font-size: 0.72rem; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--gold); margin-bottom: 16px; }
+  .footer-links { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .footer-links a { color: var(--muted); text-decoration: none; font-size: 0.85rem; transition: color 0.3s; }
+  .footer-links a:hover { color: var(--gold); }
+  .footer-bottom { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
+  .footer-copy { font-size: 0.75rem; color: var(--muted); }
+  .footer-emergency { font-size: 0.78rem; color: var(--soft); }
+  .footer-emergency a { color: var(--gold); text-decoration: none; }
+
+  /* ── LOGIN MODAL ── */
+  .login-btn {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    background: linear-gradient(135deg, var(--gold-dim), #c8a96e11);
+    border: 1.5px solid var(--gold);
+    color: var(--gold);
+    padding: 9px 20px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    box-shadow: 0 0 12px #c8a96e22;
+    position: relative;
+    overflow: hidden;
+  }
+  .login-btn::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--gold);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  .login-btn:hover::before { opacity: 0.12; }
+  .login-btn:hover { box-shadow: 0 0 22px #c8a96e44; transform: translateY(-1px); border-color: var(--gold-light); color: var(--gold-light); }
+
+  .user-avatar {
+    display: none;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+  }
+  .user-avatar-pic {
+    width: 34px; height: 34px;
+    border-radius: 50%;
+    background: var(--gold-dim);
+    border: 2px solid var(--gold);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--gold);
+    overflow: hidden;
+  }
+  .user-avatar-pic img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+  .user-name { font-size: 0.82rem; color: var(--soft); max-width: 100px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: #00000088;
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.2s ease;
+  }
+  .modal-overlay.open { display: flex; }
+  @keyframes fadeIn { from{opacity:0;} to{opacity:1;} }
+  .modal { animation: modalIn 0.25s ease; }
+  @keyframes modalIn { from{opacity:0;transform:translateY(16px) scale(0.98);} to{opacity:1;transform:translateY(0) scale(1);} }
+
+  .modal {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--gold);
+    width: 100%;
+    max-width: 400px;
+    margin: 16px;
+    padding: 40px 36px;
+    position: relative;
+    animation: fadeUp 0.3s ease;
+  }
+  .modal-close {
+    position: absolute;
+    top: 16px; right: 20px;
+    font-size: 1.2rem;
+    color: var(--muted);
+    cursor: pointer;
+    transition: color 0.2s;
+    background: none; border: none;
+  }
+  .modal-close:hover { color: var(--text); }
+
+  .modal-logo {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .modal-logo .doc-icon {
+    width: 56px; height: 56px;
+    background: var(--gold-dim);
+    border: 2px solid var(--gold);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.6rem;
+    margin: 0 auto 12px;
+  }
+  .modal-logo h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: var(--gold);
+  }
+  .modal-logo p { font-size: 0.8rem; color: var(--muted); margin-top: 4px; }
+
+  .modal-tabs {
+    display: flex;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 24px;
+  }
+  .modal-tab {
+    flex: 1;
+    padding: 10px;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--muted);
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s;
+    background: none; border-left: none; border-right: none; border-top: none;
+    font-family: 'Outfit', sans-serif;
+  }
+  .modal-tab.active { color: var(--gold); border-bottom: 2px solid var(--gold); }
+
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+
+  .modal-input-group { margin-bottom: 16px; }
+  .modal-input-group label {
+    display: block;
+    font-size: 0.72rem;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 7px;
+    font-weight: 500;
+  }
+  .modal-input-group input {
+    width: 100%;
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 11px 14px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.88rem;
+    outline: none;
+    transition: border-color 0.3s;
+  }
+  .modal-input-group input:focus { border-color: var(--gold); }
+  .modal-input-group input::placeholder { color: var(--muted); }
+
+  .modal-submit {
+    width: 100%;
+    background: var(--gold);
+    color: #080b12;
+    border: none;
+    padding: 13px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 4px;
+  }
+  .modal-submit:hover { background: var(--gold-light); transform: translateY(-1px); }
+
+  .modal-divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 18px 0;
+    color: var(--muted);
+    font-size: 0.75rem;
+  }
+  .modal-divider::before, .modal-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--border);
+  }
+
+  .google-btn {
+    width: 100%;
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 12px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.88rem;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s;
+  }
+  .google-btn:hover { border-color: #4285f4; background: #4285f411; }
+  .google-icon {
+    width: 18px; height: 18px;
+    background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='%23FFC107' d='M43.6 20H24v8h11.3C33.7 33.1 29.3 36 24 36c-6.6 0-12-5.4-12-12s5.4-12 12-12c3 0 5.8 1.1 7.9 3l5.7-5.7C34.1 6.5 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20c11 0 19.7-8 19.7-20 0-1.3-.1-2.7-.1-4z'/%3E%3Cpath fill='%23FF3D00' d='M6.3 14.7l6.6 4.8C14.7 15.1 19 12 24 12c3 0 5.8 1.1 7.9 3l5.7-5.7C34.1 6.5 29.3 4 24 4 16.3 4 9.7 8.4 6.3 14.7z'/%3E%3Cpath fill='%234CAF50' d='M24 44c5.2 0 9.9-1.8 13.6-4.7l-6.3-5.2C29.4 35.7 26.8 36 24 36c-5.2 0-9.7-2.9-11.9-7.1l-6.6 5.1C9.5 39.6 16.3 44 24 44z'/%3E%3Cpath fill='%231976D2' d='M43.6 20H24v8h11.3c-.9 2.5-2.6 4.7-4.8 6.1l6.3 5.2C40.5 36 44 30.4 44 24c0-1.3-.1-2.7-.4-4z'/%3E%3C/svg%3E") center/contain no-repeat;
+    flex-shrink: 0;
+  }
+
+  .modal-phone-row { display: flex; gap: 8px; }
+  .modal-phone-row .country-code {
+    background: var(--card);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 11px 12px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.88rem;
+    width: 80px;
+    text-align: center;
+    outline: none;
+  }
+  .modal-phone-row input { flex: 1; }
+
+  .modal-error {
+    background: #2a0d0d;
+    border: 1px solid #6a2a2a;
+    color: #ff8080;
+    font-size: 0.8rem;
+    padding: 10px 14px;
+    margin-bottom: 14px;
+    display: none;
+  }
+  .modal-success {
+    text-align: center;
+    padding: 20px 0;
+    display: none;
+  }
+  .modal-success .tick { font-size: 3rem; margin-bottom: 12px; }
+  .modal-success h4 { color: var(--gold); font-family: 'Playfair Display', serif; font-size: 1.2rem; margin-bottom: 6px; }
+  .modal-success p { font-size: 0.85rem; color: var(--muted); }
+
+  /* Dropdown after login */
+  .user-dropdown {
+    position: relative;
+  }
+  .user-dropdown-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-top: 2px solid var(--gold);
+    min-width: 200px;
+    z-index: 500;
+    overflow: hidden;
+    box-shadow: 0 8px 32px #00000066;
+    animation: fadeUp 0.2s ease;
+  }
+  .user-dropdown-menu.open { display: block; }
+  .user-dropdown-menu a, .user-dropdown-menu button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 13px 18px;
+    font-size: 0.84rem;
+    color: var(--soft);
+    text-decoration: none;
+    width: 100%;
+    background: none;
+    border: none;
+    font-family: 'Outfit', sans-serif;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+    text-align: left;
+  }
+  .user-dropdown-menu a:hover, .user-dropdown-menu button:hover { background: var(--surface); color: var(--gold); }
+  .user-dropdown-menu hr { border: none; border-top: 1px solid var(--border); margin: 4px 0; }
+  .logout-btn { color: #ff6b6b !important; }
+  .logout-btn:hover { color: #ff4444 !important; background: #2a0d0d !important; }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 960px) {
+    nav { padding: 16px 24px; }
+    nav.scrolled { padding: 12px 24px; }
+    .nav-links, .nav-cta { display: none; }
+    .hamburger { display: flex; }
+    section { padding: 64px 24px; }
+    .hero { flex-direction: column; padding: 110px 24px 60px; gap: 40px; }
+    .hero-card { flex: none; width: 100%; }
+    .about-grid, .appt-wrapper, .clinics-grid { grid-template-columns: 1fr; gap: 36px; }
+    .about-content { padding-left: 0; }
+    .services-grid { grid-template-columns: 1fr 1fr; }
+    .testi-grid { grid-template-columns: 1fr; gap: 16px; }
+    .tips-grid { grid-template-columns: 1fr 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+    footer { padding: 36px 24px; }
+    .footer-top { flex-direction: column; }
+    .divider { margin: 0 24px; }
+    .about-tag { bottom: -10px; right: 10px; }
+  }
+  @media (max-width: 600px) {
+    .services-grid, .tips-grid { grid-template-columns: 1fr; }
+    .hero-stats { gap: 20px; }
+    .testi-grid { grid-template-columns: 1fr; }
+  }
+
+  /* ── LOADER ── */
+  #loader {
+    position: fixed;
+    inset: 0;
+    background: var(--bg);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    transition: opacity 0.6s ease;
+  }
+  #loader.hidden { opacity: 0; pointer-events: none; }
+  .loader-cross {
+    position: relative;
+    width: 64px; height: 64px;
+  }
+  .loader-cross::before, .loader-cross::after {
+    content: '';
+    position: absolute;
+    background: var(--gold);
+    border-radius: 4px;
+    transition: all 0.3s;
+  }
+  .loader-cross::before { width: 12px; height: 64px; left: 26px; top: 0; }
+  .loader-cross::after  { width: 64px; height: 12px; left: 0; top: 26px; }
+  .loader-ring {
+    position: absolute;
+    inset: -12px;
+    border: 2px solid #c8a96e33;
+    border-top-color: var(--gold);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  .loader-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: var(--gold);
+    letter-spacing: 1px;
+    animation: fadeUp 0.6s ease both;
+  }
+  .loader-bar {
+    width: 200px;
+    height: 2px;
+    background: var(--border);
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+  }
+  .loader-bar::after {
+    content: '';
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    animation: shimmer 1.2s ease infinite;
+  }
+  @keyframes shimmer { to { left: 100%; } }
+  .loader-sub {
+    font-size: 0.72rem;
+    letter-spacing: 3px;
+    color: var(--muted);
+    text-transform: uppercase;
+    animation: fadeUp 0.6s 0.2s ease both;
+  }
+
+
+  /* ── CHATBOT ── */
+  #chatNotif {
+    position: fixed;
+    bottom: 90px;
+    left: 24px;
+    display: none;
+    background: var(--gold);
+    color: #000;
+    padding: 10px 14px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    z-index: 398;
+    animation: slideUp 0.3s ease;
+  }
+  #chatBtn {
+    position: fixed;
+    bottom: 28px;
+    left: 28px;
+    width: 56px;
+    height: 56px;
+    background: var(--gold);
+    border: none;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px #c8a96e55;
+    z-index: 399;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+  }
+  #chatBtn:hover { transform: scale(1.1); box-shadow: 0 6px 24px #c8a96e77; }
+  #chatBox {
+    display: none;
+    position: fixed;
+    bottom: 96px;
+    left: 28px;
+    width: 340px;
+    height: 480px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--gold);
+    flex-direction: column;
+    box-shadow: 0 16px 60px #00000088;
+    z-index: 400;
+    animation: fadeUp 0.25s ease;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  .chat-header {
+    display: flex;
+    gap: 12px;
+    padding: 14px;
+    background: var(--card);
+    border-bottom: 1px solid var(--border);
+  }
+  .chat-avatar { font-size: 1.8rem; }
+  .chat-header-info { flex: 1; }
+  .chat-header-name { font-weight: 600; color: var(--gold); font-size: 0.9rem; }
+  .chat-header-status { font-size: 0.7rem; color: #4ade80; display: flex; align-items: center; gap: 5px; margin-top: 2px; }
+  .chat-header-status::before { content: ''; width: 6px; height: 6px; background: #4ade80; border-radius: 50%; }
+  .chat-close { cursor: pointer; font-size: 1.2rem; color: var(--muted); transition: color 0.2s; }
+  .chat-close:hover { color: var(--text); }
+  #chatMsgs {
+    flex: 1;
+    overflow-y: auto;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .chat-msg { font-size: 0.85rem; line-height: 1.4; }
+  .chat-msg.user { align-self: flex-end; background: var(--gold-dim); color: var(--gold); padding: 8px 12px; border-radius: 10px; max-width: 80%; }
+  .chat-msg.bot { align-self: flex-start; color: var(--soft); max-width: 90%; }
+  .chat-msg a { color: var(--gold); text-decoration: none; }
+  .chat-msg a:hover { text-decoration: underline; }
+  .typing-indicator { display: flex; gap: 4px; padding: 8px; }
+  .typing-indicator span { width: 6px; height: 6px; background: var(--muted); border-radius: 50%; animation: bounce 1.4s infinite; }
+  .typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+  .typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+  @keyframes bounce { 0%, 60%, 100% { transform: translateY(0); } 30% { transform: translateY(-10px); } }
+  .chat-input-area {
+    display: flex;
+    gap: 6px;
+    padding: 10px;
+    border-top: 1px solid var(--border);
+    background: var(--card);
+  }
+  #chatInput {
+    flex: 1;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 8px 10px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-family: 'Outfit', sans-serif;
+  }
+  #chatInput:focus { outline: none; border-color: var(--gold); }
+  #chatSend {
+    background: var(--gold);
+    border: none;
+    color: #000;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.8rem;
+    transition: background 0.2s;
+  }
+  #chatSend:hover { background: var(--gold-light); }
+  @media (max-width: 600px) {
+    #chatBox { left: 12px; right: 12px; width: auto; bottom: 100px; }
+    #chatBtn { bottom: 20px; left: 20px; }
+    #chatNotif { left: 20px; }
+  }
+
+
+  
+
+
+  /* ── LIGHT MODE ── */
+  body.light-mode {
+    --bg: #f4f6fb;
+    --surface: #ffffff;
+    --card: #eef0f7;
+    --border: #00000012;
+    --text: #0d1020;
+    --muted: #6b7280;
+    --soft: #374151;
+  }
+  body.light-mode .bg-glow { opacity: 0.04; }
+  body.light-mode #navbar { background: #ffffffee; border-bottom-color: #00000010; }
+  body.light-mode .service-card { background: #ffffff; }
+  body.light-mode .clinic-card  { background: #ffffff; }
+  body.light-mode #chatBox      { background: #ffffff; }
+  body.light-mode .chat-header  { background: #f4f6fb; }
+  body.light-mode .chat-input-area { background: #f4f6fb; }
+  body.light-mode #chatInput    { background: #eef0f7; border-color: #00000015; color: #0d1020; }
+  body.light-mode .chat-msg.bot { color: #374151; }
+  body.light-mode .modal { background: #ffffff; }
+  body.light-mode .faq-item     { background: #ffffff; }
+
+  /* ── THEME TOGGLE BUTTON ── */
+  #themeToggle {
+    background: none;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+  }
+  #themeToggle:hover { border-color: var(--gold); color: var(--gold); }
+
+  /* ── PWA INSTALL BANNER ── */
+  #pwaBar {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0; right: 0;
+    background: var(--card);
+    border-top: 2px solid var(--gold);
+    padding: 14px 20px;
+    z-index: 800;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    box-shadow: 0 -4px 24px #00000044;
+    animation: slideUp 0.4s ease;
+  }
+  #pwaBar.show { display: flex; }
+  .pwa-info { display: flex; align-items: center; gap: 12px; }
+  .pwa-icon { font-size: 2rem; }
+  .pwa-text { font-size: 0.82rem; color: var(--soft); }
+  .pwa-text strong { color: var(--gold); display: block; font-size: 0.9rem; }
+  .pwa-btns { display: flex; gap: 8px; flex-shrink: 0; }
+  .pwa-install { background: var(--gold); color: #000; border: none; padding: 9px 18px; font-weight: 600; font-size: 0.82rem; border-radius: 6px; cursor: pointer; }
+  .pwa-dismiss { background: none; border: 1px solid var(--border); color: var(--muted); padding: 9px 14px; font-size: 0.82rem; border-radius: 6px; cursor: pointer; }
+
+  /* ── REMINDER MODAL ── */
+  #reminderModal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: #00000088;
+    z-index: 900;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  #reminderModal.show { display: flex; }
+  .reminder-box {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--gold);
+    max-width: 440px;
+    width: 100%;
+    padding: 32px;
+    animation: fadeUp 0.3s ease;
+    border-radius: 8px;
+  }
+  .reminder-box h3 { font-family: "Playfair Display", serif; color: var(--gold); font-size: 1.3rem; margin-bottom: 6px; }
+  .reminder-box p  { color: var(--muted); font-size: 0.85rem; margin-bottom: 20px; }
+  .reminder-input  { width: 100%; background: var(--surface); border: 1px solid var(--border); color: var(--text); padding: 11px 14px; border-radius: 6px; font-family: "Outfit", sans-serif; font-size: 0.9rem; margin-bottom: 10px; }
+  .reminder-input:focus { outline: none; border-color: var(--gold); }
+  .reminder-row { display: flex; gap: 10px; }
+  .reminder-send { flex: 1; background: #25d366; color: #fff; border: none; padding: 12px; border-radius: 6px; font-weight: 600; cursor: pointer; font-size: 0.9rem; }
+  .reminder-cancel { background: none; border: 1px solid var(--border); color: var(--muted); padding: 12px 16px; border-radius: 6px; cursor: pointer; }
+
+</style>
+</head>
+<body>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-cross">
+    <div class="loader-ring"></div>
+  </div>
+  <div class="loader-name">Dr. Rajendra Kumar Asati</div>
+  <div class="loader-bar"></div>
+  <div class="loader-sub">General Physician · Tiroda</div>
+</div>
+
+
+<div class="bg-glow"></div>
+
+<!-- FLOATING WHATSAPP -->
+<a class="wa-float" href="https://wa.me/919637604170?text=Hello%20Dr.%20Asati%2C%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener">
+  💬
+  <span class="wa-float-tooltip">Book on WhatsApp</span>
+</a>
+
+<!-- BACK TO TOP -->
+<div id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</div>
+
+<!-- NAV -->
+<nav id="navbar">
+    <div class="nav-logo">
+    Dr. Asati
+    <span>General Physician · Tiroda</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#clinics">Clinics</a></li>
+    <li><a href="#tips">Health Tips</a></li>
+    <li><a href="#appointment">Contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <div id="loginBtnWrap">
+      <button class="login-btn" onclick="openLogin()">👤 Login</button>
+    </div>
+    <div class="user-dropdown" id="userAvatarWrap" style="display:none;">
+      <div class="user-avatar" style="display:flex;" onclick="toggleDropdown()" id="avatarToggle">
+        <div class="user-avatar-pic" id="navAvatarPic">U</div>
+        <span class="user-name" id="navUserName">User</span>
+        <span style="color:var(--muted);font-size:0.7rem;margin-left:2px;">▾</span>
+      </div>
+      <div class="user-dropdown-menu" id="userDropMenu">
+        <div style="padding:14px 18px;border-bottom:1px solid var(--border);">
+          <div style="font-size:0.75rem;color:var(--muted);letter-spacing:1px;text-transform:uppercase;">Logged in as</div>
+          <div style="font-size:0.9rem;color:var(--gold);font-weight:600;margin-top:4px;" id="dropUserName">User</div>
+        </div>
+        <a href="#appointment" onclick="toggleDropdown()">📅 Book Appointment</a>
+        <hr/>
+        <button class="logout-btn" onclick="logoutUser()">🚪 Logout</button>
+      </div>
+    </div>
+    <button id="themeToggle" onclick="toggleTheme()" title="Toggle Dark/Light mode">🌙</button>
+    <a href="#appointment" class="nav-cta">Book Appointment</a>
+    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#services" onclick="closeMenu()">Services</a>
+  <a href="#clinics" onclick="closeMenu()">Clinics</a>
+  <a href="#tips" onclick="closeMenu()">Health Tips</a>
+  <a href="#appointment" onclick="closeMenu()">Contact</a>
+  <a href="#appointment" class="mob-cta" onclick="closeMenu()">📲 Book Appointment</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-badge">Trusted Healthcare Since 1997</div>
+    <h1>Dr. Rajendra<br>Kumar <span class="gold">Asati</span></h1>
+    <div class="hero-title-sub">General Physician · Tiroda</div>
+    <p class="hero-desc">
+      With over 27 years of dedicated medical practice, Dr. Asati brings compassionate, expert care to every patient. Serving the community across two clinics in Tiroda with commitment, precision, and heart.
+    </p>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num" data-count="27" data-suffix="+">27+</div>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num" data-count="2" data-suffix="">2</div>
+        <div class="stat-label">Clinic Locations</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num" data-count="10" data-suffix="K+">10K+</div>
+        <div class="stat-label">Patients Served</div>
+      </div>
+    </div>
+    <div class="hero-btns">
+      <a href="#appointment" class="btn-primary">Book Appointment</a>
+      <a href="https://wa.me/919637604170?text=Hello%20Dr.%20Asati%2C%20I%20need%20an%20appointment." target="_blank" class="btn-wa" rel="noopener">💬 WhatsApp</a>
+      <a href="#clinics" class="btn-outline">Our Clinics</a>
+    </div>
+  </div>
+
+  <div class="hero-card">
+    <div class="hero-card-icon">🕐</div>
+    <h3>Clinic Hours</h3>
+    <p>Open round the clock. Walk-ins welcome anytime.</p>
+    <ul class="hours-list">
+      <li>Monday – Sunday <span>Open 24/7</span></li>
+      <li>Day &amp; Night <span>Always Available</span></li>
+      <li>Emergencies <span>Anytime, Always</span></li>
+      <li>Holidays <span>We're Here</span></li>
+    </ul>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-grid">
+    <div class="about-visual">
+      <div class="about-img-box">
+        <span class="about-placeholder">👨‍⚕️</span>
+        <div class="about-tag">27+ Years<span>of Healing</span></div>
+      </div>
+    </div>
+    <div class="about-content">
+      <div class="section-label">About the Doctor</div>
+      <h2 class="section-title">Compassionate Care,<br>Every Single Day</h2>
+      <p style="color:var(--soft);font-size:0.94rem;line-height:1.88;margin-bottom:34px;">
+        Dr. Rajendra Kumar Asati is a highly experienced General Physician with over 27 years of dedicated medical service in Tiroda. Known for his patient-first approach, he has helped thousands of families stay healthy — providing accurate diagnoses and effective treatments with genuine care and warmth.
+      </p>
+      <div class="about-feature">
+        <div class="about-feature-icon">🎓</div>
+        <div>
+          <h4>Highly Qualified & Experienced</h4>
+          <p>Decades of continued learning and clinical expertise, serving patients across all age groups with precision.</p>
+        </div>
+      </div>
+      <div class="about-feature">
+        <div class="about-feature-icon">❤️</div>
+        <div>
+          <h4>Patient-Centered Approach</h4>
+          <p>Every patient is treated with respect, empathy, and personalized attention — not just a case number.</p>
+        </div>
+      </div>
+      <div class="about-feature">
+        <div class="about-feature-icon">🏥</div>
+        <div>
+          <h4>Two Convenient Locations</h4>
+          <p>Accessible clinics at Kachewani Bus Stop and Berdipar, Tiroda — open 24/7 for your convenience.</p>
+        </div>
+      </div>
+      <div class="about-feature">
+        <div class="about-feature-icon">🚨</div>
+        <div>
+          <h4>24/7 Emergency Availability</h4>
+          <p>Always available for emergencies — call anytime, day or night. Your health never waits.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div style="text-align:center;margin-bottom:52px;">
+    <div class="section-label" style="display:block;">What We Treat</div>
+    <h2 class="section-title" style="margin-bottom:12px;">Comprehensive Medical Services</h2>
+    <p style="color:var(--soft);font-size:0.94rem;line-height:1.8;max-width:500px;margin:0 auto;">
+      From routine check-ups to complex diagnoses, Dr. Asati provides a full spectrum of general medicine services.
+    </p>
+  </div>
+  <div class="services-grid">
+    <div class="service-card">
+      <span class="service-icon">🩺</span>
+      <h3>General Check-ups</h3>
+      <p>Routine physical exams, preventive health screenings, and wellness consultations for all age groups.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🤒</span>
+      <h3>Fever & Infections</h3>
+      <p>Diagnosis and treatment of viral, bacterial infections, common cold, flu, and seasonal illnesses.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">💊</span>
+      <h3>Chronic Disease Management</h3>
+      <p>Long-term care for diabetes, hypertension, thyroid disorders, and other chronic conditions.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🫁</span>
+      <h3>Respiratory Care</h3>
+      <p>Treatment for cough, asthma, bronchitis, breathing difficulties, and respiratory infections.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🧾</span>
+      <h3>Prescriptions & Referrals</h3>
+      <p>Expert prescriptions, lab test recommendations, and specialist referrals when needed.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">👨‍👩‍👧</span>
+      <h3>Family Healthcare</h3>
+      <p>Trusted medical care for the whole family — children, adults, and senior citizens alike.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🩸</span>
+      <h3>Blood Pressure & Diabetes</h3>
+      <p>Regular monitoring and management of BP, sugar levels, and related lifestyle conditions.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🏃</span>
+      <h3>Preventive Healthcare</h3>
+      <p>Vaccinations, lifestyle guidance, and early detection screenings to keep you healthy.</p>
+    </div>
+    <div class="service-card">
+      <span class="service-icon">🚨</span>
+      <h3>Emergency Care</h3>
+      <p>Available 24/7 for emergencies including acute pain, injuries, and urgent medical needs.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div style="text-align:center;margin-bottom:52px;">
+    <div class="section-label" style="display:block;">Patient Reviews</div>
+    <h2 class="section-title" style="margin-bottom:12px;">What Patients Say</h2>
+    <p style="color:var(--soft);font-size:0.94rem;max-width:480px;margin:0 auto;line-height:1.8;">
+      Thousands of families in Tiroda trust Dr. Asati for their healthcare needs.
+    </p>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card">
+      <div class="testi-quote">"</div>
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">Dr. Asati ne mere pura family ka ilaj kiya hai. Bahut achhe doctor hain — samjhte hain badi seedhi baat se aur bilkul sahi treatment dete hain.</p>
+      <div class="testi-author">Ramesh Patel</div>
+      <div class="testi-location">Kachewani, Tiroda</div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-quote">"</div>
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">27 saal ka experience clearly dikhta hai. Mere bache ko bukhaar tha, unhone raat ko bhi dekha. Bahut caring doctor hain. Highly recommended!</p>
+      <div class="testi-author">Sunita Bai</div>
+      <div class="testi-location">Berdipar, Tiroda</div>
+    </div>
+    <div class="testi-card">
+      <div class="testi-quote">"</div>
+      <div class="testi-stars">★★★★★</div>
+      <p class="testi-text">Mera sugar aur BP dono unke treatment se control mein hai. Bahut affordable fees aur bade achhe insaan hain. God bless Dr. Asati saab!</p>
+      <div class="testi-author">Mohan Thakur</div>
+      <div class="testi-location">Tiroda</div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- HEALTH TIPS -->
+<section class="tips" id="tips">
+  <div style="text-align:center;margin-bottom:48px;">
+    <div class="section-label" style="display:block;">Stay Healthy</div>
+    <h2 class="section-title" style="margin-bottom:12px;">Health Tips from Dr. Asati</h2>
+    <p style="color:var(--soft);font-size:0.94rem;max-width:460px;margin:0 auto;line-height:1.8;">Simple habits that make a big difference to your daily health.</p>
+  </div>
+  <div class="tips-grid">
+    <div class="tip-card">
+      <span class="tip-icon">💧</span>
+      <h4>Stay Hydrated</h4>
+      <p>Drink at least 8 glasses of water daily. Dehydration causes fatigue, headaches, and poor immunity.</p>
+    </div>
+    <div class="tip-card">
+      <span class="tip-icon">🥗</span>
+      <h4>Eat Balanced</h4>
+      <p>Include fruits, vegetables, and protein in every meal. Avoid excessive oil, salt, and sugar.</p>
+    </div>
+    <div class="tip-card">
+      <span class="tip-icon">🚶</span>
+      <h4>Walk Daily</h4>
+      <p>Just 30 minutes of walking each day reduces risk of diabetes, BP, and heart problems significantly.</p>
+    </div>
+    <div class="tip-card">
+      <span class="tip-icon">😴</span>
+      <h4>Sleep 7–8 Hours</h4>
+      <p>Good sleep is the body's natural medicine. It repairs cells, boosts immunity, and reduces stress.</p>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CLINICS -->
+<section class="clinics" id="clinics">
+  <div class="section-label">Our Locations</div>
+  <h2 class="section-title">Two Clinics,<br>One Commitment</h2>
+  <p class="section-desc">Open 24/7 — visit Dr. Asati at either location anytime.</p>
+
+  <div class="clinics-grid">
+    <div class="clinic-card">
+      <div class="clinic-num">01</div>
+      <div class="clinic-card-icon">🏥</div>
+      <h3>Clinic One</h3>
+      <div class="clinic-location">Kachewani Bus Stop, Tiroda</div>
+      <div class="clinic-detail">
+        <div class="clinic-detail-icon">📍</div>
+        <div>Near Kachewani Bus Stop, Tiroda, Maharashtra</div>
+      </div>
+      <div class="clinic-detail">
+        <div class="clinic-detail-icon">🕐</div>
+        <div>Open 24/7 — Every Day Including Holidays</div>
+      </div>
+      <div class="clinic-detail">
+        <div class="clinic-detail-icon">📞</div>
+        <div><a href="tel:+919637604170" style="color:var(--gold);text-decoration:none;">+91 96376 04170</a></div>
+      </div>
+      <a href="https://wa.me/919637604170?text=Hello%20Dr.%20Asati%2C%20I%20want%20to%20visit%20Kachewani%20clinic.%20Please%20confirm%20appointment." target="_blank" class="clinic-wa-btn" rel="noopener">💬 WhatsApp Appointment</a>
+    </div>
+
+    <div class="clinic-card">
+      <div class="clinic-num">02</div>
+      <div class="clinic-card-icon">🏥</div>
+      <h3>Clinic Two</h3>
+      <div class="clinic-location">Berdipar, Tiroda</div>
+      <div class="clinic-detail">
+        <div class="clinic-detail-icon">📍</div>
+        <div>Berdipar Area, Tiroda, Maharashtra</div>
+      </div>
+      <div class="clinic-detail">
+        <div class="clinic-detail-icon">🕐</div>
+        <div>Open 24/7 — Every Day Including Holidays</div>
+      </div>
+      <div class="clinic-detail">
+        <div class="clinic-detail-icon">📞</div>
+        <div><a href="tel:+919637604170" style="color:var(--gold);text-decoration:none;">+91 96376 04170</a></div>
+      </div>
+      <a href="https://wa.me/919637604170?text=Hello%20Dr.%20Asati%2C%20I%20want%20to%20visit%20Berdipar%20clinic.%20Please%20confirm%20appointment." target="_blank" class="clinic-wa-btn" rel="noopener">💬 WhatsApp Appointment</a>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- APPOINTMENT -->
+<section id="appointment">
+  <div class="appt-wrapper">
+    <div>
+      <div class="section-label">Book a Visit</div>
+      <h2 class="section-title">Schedule Your<br>Appointment</h2>
+      <p class="section-desc" style="margin-bottom:36px;">Fill the form and your appointment details will be sent directly to Dr. Asati on WhatsApp.</p>
+
+      <div class="contact-block">
+        <div class="contact-block-icon">📞</div>
+        <div>
+          <h4>Phone (Call Anytime)</h4>
+          <p><a href="tel:+919637604170">+91 96376 04170</a></p>
+        </div>
+      </div>
+      <div class="contact-block">
+        <div class="contact-block-icon">💬</div>
+        <div>
+          <h4>WhatsApp</h4>
+          <p><a href="https://wa.me/919637604170" target="_blank" rel="noopener">Chat on WhatsApp</a></p>
+        </div>
+      </div>
+      <div class="contact-block">
+        <div class="contact-block-icon">✉️</div>
+        <div>
+          <h4>Email</h4>
+          <p><a href="mailto:rajendrakumarasati37@gmail.com">rajendrakuamrasati37@gmail.com</a></p>
+        </div>
+      </div>
+      <div class="contact-block">
+        <div class="contact-block-icon">📍</div>
+        <div>
+          <h4>Locations</h4>
+          <p>Kachewani Bus Stop &amp; Berdipar, Tiroda, MH</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="appt-form">
+      <h3 style="font-family:'Playfair Display',serif;font-size:1.5rem;margin-bottom:26px;">Book via WhatsApp</h3>
+      <div class="form-row">
+        <div class="form-group">
+          <label>First Name *</label>
+          <input type="text" placeholder="Rahul" id="fname" autocomplete="off"/>
+        </div>
+        <div class="form-group">
+          <label>Last Name</label>
+          <input type="text" placeholder="Sharma" id="lname" autocomplete="off"/>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Phone Number *</label>
+        <input type="tel" placeholder="+91 98765 43210" id="phone" autocomplete="off"/>
+      </div>
+      <div class="form-group">
+        <label>Email (Optional)</label>
+        <input type="email" placeholder="your@email.com" id="email" autocomplete="off"/>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label>Preferred Clinic *</label>
+          <select id="clinic">
+            <option value="">Select Clinic</option>
+            <option>Kachewani Bus Stop</option>
+            <option>Berdipar</option>
+            <option>Any Available</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Preferred Date *</label>
+          <input type="date" id="appt-date"/>
+        </div>
+      </div>
+      <div class="form-group">
+        <label>Reason for Visit</label>
+        <textarea placeholder="Briefly describe your symptoms or reason..." id="reason"></textarea>
+      </div>
+      <button class="form-submit" onclick="submitForm()">💬 Send via WhatsApp</button>
+      <button onclick="openReminder()" style="width:100%;margin-top:10px;padding:14px;background:none;border:1px solid var(--gold);color:var(--gold);border-radius:6px;font-size:0.9rem;font-weight:600;cursor:pointer;transition:all 0.2s;font-family:'Outfit',sans-serif;" onmouseover="this.style.background='var(--gold-dim)'" onmouseout="this.style.background='none'">🔔 Appointment Reminder Set Karein</button>
+      <div id="appt-error" style="
+        display:none;
+        background:#1a0808;
+        border:1px solid #6a2a2a;
+        border-left:4px solid #e05555;
+        color:#ff9090;
+        font-size:0.84rem;
+        padding:12px 16px;
+        margin-top:12px;
+        border-radius:2px;
+      "></div>
+      <div class="success-msg" id="success-msg">
+        ✅ WhatsApp opened! Just press Send to confirm your appointment.
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- PWA INSTALL BAR -->
+<div id="pwaBar">
+  <div class="pwa-info">
+    <div class="pwa-icon">🏥</div>
+    <div class="pwa-text">
+      <strong>Dr. Asati App Install Karein</strong>
+      Phone pe app ki tarah use karein — offline bhi!
+    </div>
+  </div>
+  <div class="pwa-btns">
+    <button class="pwa-install" onclick="installPwa()">📲 Install</button>
+    <button class="pwa-dismiss" onclick="dismissPwa()">✕</button>
+  </div>
+</div>
+
+<!-- APPOINTMENT REMINDER MODAL -->
+<div id="reminderModal">
+  <div class="reminder-box">
+    <h3>🔔 Appointment Reminder</h3>
+    <p>Apni appointment ki details bharo — WhatsApp pe reminder message milega!</p>
+    <input class="reminder-input" id="remName" placeholder="Aapka Naam *" type="text"/>
+    <input class="reminder-input" id="remPhone" placeholder="WhatsApp Number (+91XXXXXXXXXX) *" type="tel"/>
+    <input class="reminder-input" id="remDate" placeholder="Appointment Date *" type="date"/>
+    <input class="reminder-input" id="remTime" placeholder="Appointment Time (jaise: 10:00 AM)" type="text"/>
+    <div class="reminder-row">
+      <button class="reminder-send" onclick="sendReminder()">💬 WhatsApp Reminder Bhejo</button>
+      <button class="reminder-cancel" onclick="closeReminder()">Cancel</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── CHATBOT HTML ── -->
+<div id="chatNotif">💬 Koi health sawaal? Poochho!</div>
+<div id="chatBtn" title="Dr. Asati se poochho" onclick="toggleChat()" style="cursor:pointer;z-index:399;">🩺</div>
+
+<div id="chatBox">
+  <div class="chat-header">
+    <div class="chat-avatar">👨‍⚕️</div>
+    <div class="chat-header-info">
+      <div class="chat-header-name">Dr. Asati</div>
+      <div class="chat-header-status">Online — Health Assistant</div>
+      <div style="font-size:0.65rem;color:#f59e0b;margin-top:3px;">⚠️ AI can make mistakes</div>
+    </div>
+    <div class="chat-close" onclick="closeChatBot()">✕</div>
+  </div>
+
+  <div id="chatMsgs">
+    <div class="chat-msg bot">
+      Namaskar! 🙏 Main <strong>Dr. Asati Health Assistant</strong> hoon.<br><br>
+      Aapka swagat hai! Shuru karne se pehle — <strong>aapka naam kya hai?</strong> 😊
+    </div>
+  </div>
+
+  <div class="chat-input-area">
+    <input id="chatInput" type="text" placeholder="Kuch poochho..." />
+    <button id="chatSend">Send</button>
+  </div>
+</div>
+
+<!-- ── LOGIN MODAL ── -->
+<div class="modal-overlay" id="loginModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeLogin()">✕</button>
+
+    <div class="modal-logo">
+      <div class="doc-icon">👨‍⚕️</div>
+      <h3>Dr. Asati Portal</h3>
+      <p>Sign in to manage your appointments</p>
+    </div>
+
+    <div id="loginSuccess" class="modal-success">
+      <div class="tick">✅</div>
+      <h4>Welcome!</h4>
+      <p id="loginSuccessMsg">You are now signed in.</p>
+    </div>
+
+    <div id="loginForms">
+      <div class="modal-tabs">
+        <button class="modal-tab active" onclick="switchTab('email')">📧 Email</button>
+        <button class="modal-tab" onclick="switchTab('phone')">📱 Phone OTP</button>
+      </div>
+
+      <div id="modalError" class="modal-error"></div>
+
+      <!-- EMAIL TAB -->
+      <div class="tab-content active" id="tab-email">
+        <div class="modal-input-group">
+          <label>Aapka Poora Naam *</label>
+          <input type="text" id="loginName" placeholder="Jaise: Ramesh Kumar" autocomplete="off"/>
+        </div>
+        <div class="modal-input-group">
+          <label>Gmail / Email *</label>
+          <input type="email" id="loginEmail" placeholder="yourname@gmail.com" autocomplete="off"/>
+        </div>
+        <div class="modal-input-group">
+          <label>Password *</label>
+          <input type="password" id="loginPassword" placeholder="Min 6 characters" autocomplete="off"/>
+        </div>
+        <button class="modal-submit" onclick="emailLogin()">Login →</button>
+        <p style="font-size:0.75rem;color:var(--muted);text-align:center;margin-top:14px;">
+          Naya account? <span style="color:var(--gold);cursor:pointer;" onclick="switchToRegister()">Register karein</span>
+        </p>
+      </div>
+
+      <!-- PHONE TAB -->
+      <div class="tab-content" id="tab-phone">
+        <div id="phoneStep1">
+          <div class="modal-input-group">
+            <label>Aapka Poora Naam *</label>
+            <input type="text" id="phoneName" placeholder="Jaise: Ramesh Kumar" autocomplete="off"/>
+          </div>
+          <div class="modal-input-group">
+            <label>Mobile Number *</label>
+            <div class="modal-phone-row">
+              <input class="country-code" value="+91" readonly/>
+              <input type="tel" id="loginPhone" placeholder="9876543210" maxlength="10" autocomplete="off"/>
+            </div>
+          </div>
+          <button class="modal-submit" onclick="sendOtp()">OTP Bhejo →</button>
+        </div>
+        <div id="otpStep" style="display:none;">
+
+          <!-- OTP Message Box - Dr. Asati ki taraf se -->
+          <div id="otpMsgBox" style="
+            background: #0d1a0f;
+            border: 1px solid #2a6a3a;
+            border-left: 4px solid #25d366;
+            padding: 14px 16px;
+            margin-bottom: 16px;
+            border-radius: 2px;
+          ">
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:8px;">
+              <span style="font-size:1.3rem;">📨</span>
+              <div>
+                <div style="font-size:0.72rem;color:#6fcf97;font-weight:600;letter-spacing:1px;text-transform:uppercase;">Message from Dr. Asati Clinic</div>
+                <div style="font-size:0.7rem;color:var(--muted);margin-top:1px;" id="otpPhoneDisplay">+91 XXXXXXXXXX</div>
+              </div>
+            </div>
+            <div style="font-size:0.88rem;color:var(--soft);line-height:1.6;">
+              Namaskar! Aapka Dr. Asati Clinic mein swagat hai. 🏥<br>
+              Aapka login OTP hai:
+            </div>
+            <div style="
+              font-size: 2rem;
+              font-weight: 700;
+              color: #25d366;
+              letter-spacing: 10px;
+              text-align: center;
+              padding: 10px 0 6px;
+              font-family: 'Playfair Display', serif;
+            " id="otpDisplayCode">------</div>
+            <div style="font-size:0.75rem;color:var(--muted);text-align:center;">
+              Yeh OTP 5 minute mein expire hoga. Kisi se share mat karein.
+            </div>
+          </div>
+
+          <div class="modal-input-group">
+            <label>OTP Daalo *</label>
+            <input type="text" id="loginOtp" placeholder="6-digit OTP" maxlength="6" autocomplete="off"
+              style="letter-spacing:6px;font-size:1.1rem;text-align:center;font-weight:600;"/>
+          </div>
+          <p style="font-size:0.75rem;color:var(--muted);margin-bottom:12px;text-align:center;">
+            OTP nahi mila? <span style="color:var(--gold);cursor:pointer;" onclick="resendOtp()">Dobara bhejo</span>
+          </p>
+          <button class="modal-submit" onclick="verifyOtp()">✅ Verify & Login →</button>
+        </div>
+      </div>
+
+      <!-- REGISTER SECTION -->
+      <div class="tab-content" id="tab-register">
+        <div class="modal-input-group">
+          <label>Poora Naam *</label>
+          <input type="text" id="regName" placeholder="Jaise: Ramesh Kumar" autocomplete="off"/>
+        </div>
+        <div class="modal-input-group">
+          <label>Gmail / Email *</label>
+          <input type="email" id="regEmail" placeholder="yourname@gmail.com" autocomplete="off"/>
+        </div>
+        <div class="modal-input-group">
+          <label>Password Banao *</label>
+          <input type="password" id="regPassword" placeholder="Min 6 characters" autocomplete="off"/>
+        </div>
+        <button class="modal-submit" onclick="registerUser()">Account Banao →</button>
+        <p style="font-size:0.75rem;color:var(--muted);text-align:center;margin-top:14px;">
+          Pehle se account hai? <span style="color:var(--gold);cursor:pointer;" onclick="switchTab('email')">Login karein</span>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div>
+      <div class="footer-logo">
+        Dr. Rajendra Kumar Asati
+        <span>General Physician · Tiroda, Maharashtra</span>
+      </div>
+      <p class="footer-desc">27+ years of compassionate, expert medical care. Available 24/7 across two clinic locations in Tiroda.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Quick Links</h5>
+      <ul class="footer-links">
+        <li><a href="#about">About Dr. Asati</a></li>
+        <li><a href="#services">Medical Services</a></li>
+        <li><a href="#clinics">Clinic Locations</a></li>
+        <li><a href="#tips">Health Tips</a></li>
+        <li><a href="#appointment">Book Appointment</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <ul class="footer-links">
+        <li><a href="tel:+919637604170">+91 96376 04170</a></li>
+        <li><a href="https://wa.me/919637604170" target="_blank" rel="noopener">WhatsApp Us</a></li>
+        <li><a href="mailto:rajendrakumarasati37@gmail.com">Email Dr. Asati</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-copy">© 2026 Dr. Rajendra Kumar Asati. All rights reserved.</div>
+    <div class="footer-emergency">🚨 Emergency? Call <a href="tel:+919637604170">+91 96376 04170</a> anytime.</div>
+  </div>
+</footer>
+
+<script>
+
+  // ── LOADER ──
+  window.addEventListener('load', function() {
+    setTimeout(function() {
+      var loader = document.getElementById('loader');
+      if (loader) {
+        loader.classList.add('hidden');
+        setTimeout(function() { if(loader.parentNode) loader.remove(); }, 700);
+      }
+    }, 1400);
+  });
+  // Safety: remove after 3s max
+  setTimeout(function() {
+    var loader = document.getElementById('loader');
+    if (loader) { loader.classList.add('hidden'); setTimeout(function(){ if(loader.parentNode) loader.remove(); }, 600); }
+  }, 3000);
+
+  // ── NAV SCROLL ──
+  window.addEventListener('scroll', () => {
+    const nav = document.getElementById('navbar');
+    const btn = document.getElementById('backToTop');
+    if (window.scrollY > 80) { nav.classList.add('scrolled'); btn.classList.add('show'); }
+    else { nav.classList.remove('scrolled'); btn.classList.remove('show'); }
+  });
+
+  // ── MOBILE MENU ──
+  function toggleMenu() {
+    document.getElementById('hamburger').classList.toggle('open');
+    document.getElementById('mobileMenu').classList.toggle('open');
+  }
+  function closeMenu() {
+    document.getElementById('hamburger').classList.remove('open');
+    document.getElementById('mobileMenu').classList.remove('open');
+  }
+
+  // ── APPOINTMENT FORM ──
+  const dateInput = document.getElementById('appt-date');
+  dateInput.setAttribute('min', new Date().toISOString().split('T')[0]);
+
+  function showApptError(msg) {
+    const el = document.getElementById('appt-error');
+    el.innerHTML = '⚠️ ' + msg;
+    el.style.display = 'block';
+    el.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    setTimeout(() => el.style.display = 'none', 5000);
+  }
+
+  function submitForm() {
+    const fname  = document.getElementById('fname').value.trim();
+    const lname  = document.getElementById('lname').value.trim();
+    const phone  = document.getElementById('phone').value.trim();
+    const email  = document.getElementById('email').value.trim();
+    const clinic = document.getElementById('clinic').value;
+    const date   = document.getElementById('appt-date').value;
+    const reason = document.getElementById('reason').value.trim();
+
+    // Hide previous error
+    document.getElementById('appt-error').style.display = 'none';
+
+    if (!fname) { showApptError('Kripya apna <strong>naam</strong> bharen.'); return; }
+    if (!phone || phone.length < 10) { showApptError('Kripya valid <strong>phone number</strong> bharen.'); return; }
+    if (!clinic) { showApptError('Kripya <strong>clinic</strong> select karein.'); return; }
+    if (!date) { showApptError('Kripya appointment ki <strong>date</strong> chunein.'); return; }
+
+    const dateFormatted = new Date(date).toLocaleDateString('en-IN', {
+      weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+    });
+
+    const msg =
+`🏥 *New Appointment Request*
+
+👤 *Patient:* {fname} {lname}
+📞 *Phone:* {phone} {email ? '\n✉️ *Email:* ' + email : ''}
+📍 *Clinic:* {clinic}
+📅 *Date:* {dateFormatted}{reason ? '\n🩺 *Reason:* ' + reason : ''}
+
+_Sent via Dr. Asati Website_`;
+
+    window.open(`https://wa.me/919637604170?text=${encodeURIComponent(msg)}`, '_blank');
+
+    document.getElementById('success-msg').style.display = 'block';
+    const btn = document.querySelector('.form-submit');
+    btn.textContent = '✓ WhatsApp Opened!';
+    btn.style.background = '#1a5c2a';
+  }
+
+  // ── SECURITY: Disable right-click & common shortcuts ──
+  document.addEventListener('contextmenu', e => e.preventDefault());
+  document.addEventListener('keydown', e => {
+    if (
+      e.key === 'F12' ||
+      (e.ctrlKey && ['u','s','a','c','p'].includes(e.key.toLowerCase())) ||
+      (e.ctrlKey && e.shiftKey && ['i','j','c'].includes(e.key.toLowerCase()))
+    ) e.preventDefault();
+  });
+
+  // ── SMOOTH COUNTER ANIMATION ──
+  const counterObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const el = entry.target;
+        const target = parseInt(el.dataset.count);
+        const suffix = el.dataset.suffix || '';
+        let current = 0;
+        const step = Math.ceil(target / 30);
+        const timer = setInterval(() => {
+          current += step;
+          if (current >= target) { current = target; clearInterval(timer); }
+          el.textContent = current + suffix;
+        }, 40);
+        counterObserver.unobserve(el);
+      }
+    });
+  }, { threshold: 0.5 });
+  document.querySelectorAll('.stat-num[data-count]').forEach(el => counterObserver.observe(el));
+
+  // ── SMOOTH ACTIVE NAV ON SCROLL ──
+  const sections = document.querySelectorAll('section[id]');
+  const navLinks = document.querySelectorAll('.nav-links a');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(sec => {
+      if (window.scrollY >= sec.offsetTop - 120) current = sec.getAttribute('id');
+    });
+    navLinks.forEach(a => {
+      a.style.color = a.getAttribute('href') === '#' + current ? 'var(--gold)' : '';
+    });
+  }, { passive: true });
+
+  // ── SCROLL REVEAL ──
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(el => {
+      if (el.isIntersecting) {
+        el.target.style.opacity = '1';
+        el.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.08 });
+
+  document.querySelectorAll(
+    '.service-card, .clinic-card, .contact-block, .about-feature, .testi-card, .tip-card'
+  ).forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    el.style.willChange = 'opacity, transform';
+    observer.observe(el);
+  });
+
+window.toggleDropdown  = toggleDropdown;
+
+
+
+  // ── DROPDOWN TOGGLE ──
+  function toggleDropdown() {
+    var menu = document.getElementById('userDropMenu');
+    if (menu) menu.classList.toggle('open');
+  }
+
+  // ── LOGIN TAB SWITCHING ──
+  function switchTab(tab) {
+    // Hide all tabs
+    var allTabs = document.querySelectorAll('.tab-content');
+    allTabs.forEach(function(t) { t.classList.remove('active'); t.style.display = 'none'; });
+    
+    // Deactivate all tab buttons
+    var allBtns = document.querySelectorAll('.modal-tab');
+    allBtns.forEach(function(b) { b.classList.remove('active'); });
+    
+    // Show selected tab
+    var tabEl = document.getElementById('tab-' + tab);
+    if (tabEl) { 
+      tabEl.classList.add('active');
+      tabEl.style.display = 'block';
+    }
+    
+    // Reset phone/OTP steps when switching to phone tab
+    if (tab === 'phone') {
+      var step1 = document.getElementById('phoneStep1');
+      var otp = document.getElementById('otpStep');
+      if (step1) step1.style.display = 'block';
+      if (otp) otp.style.display = 'none';
+    }
+    
+    // Activate button
+    var btns = document.querySelectorAll('.modal-tab');
+    if (tab === 'email' && btns[0]) btns[0].classList.add('active');
+    if (tab === 'phone' && btns[1]) btns[1].classList.add('active');
+    
+    // Clear error
+    var err = document.getElementById('modalError');
+    if (err) err.style.display = 'none';
+  }
+
+  function switchToRegister() {
+    var allTabs = document.querySelectorAll('.tab-content');
+    allTabs.forEach(function(t) { t.classList.remove('active'); });
+    var allBtns = document.querySelectorAll('.modal-tab');
+    allBtns.forEach(function(b) { b.classList.remove('active'); });
+    var regTab = document.getElementById('tab-register');
+    if (regTab) regTab.classList.add('active');
+  }
+
+  function sendOtp() {
+    var name = document.getElementById('phoneName').value.trim();
+    var phone = document.getElementById('loginPhone').value.trim();
+    if (!name) { alert('Kripya apna naam likhein.'); return; }
+    if (!phone || phone.length !== 10 || !/^\d+$/.test(phone)) { alert('Valid 10-digit number likhein.'); return; }
+    var otp = Math.floor(100000 + Math.random() * 900000).toString();
+    window.generatedOtp = otp;
+    document.getElementById('otpDisplayCode').textContent = otp;
+    document.getElementById('otpPhoneDisplay').textContent = '+91 ' + phone.replace(/(\d{5})(\d{5})/, '$1 $2');
+    document.getElementById('phoneStep1').style.display = 'none';
+    document.getElementById('otpStep').style.display = 'block';
+  }
+
+  function resendOtp() {
+    var otp = Math.floor(100000 + Math.random() * 900000).toString();
+    window.generatedOtp = otp;
+    document.getElementById('otpDisplayCode').textContent = otp;
+    var box = document.getElementById('otpDisplayCode');
+    box.style.opacity = '0';
+    setTimeout(function() { box.style.transition = 'opacity 0.4s'; box.style.opacity = '1'; }, 100);
+  }
+
+  function verifyOtp() {
+    var entered = document.getElementById('loginOtp').value.trim();
+    var name = document.getElementById('phoneName').value.trim();
+    var phone = document.getElementById('loginPhone').value.trim();
+    if (entered !== window.generatedOtp) { alert('OTP galat hai!'); return; }
+    
+    // Success - login user
+    localStorage.setItem('drAsatiUser', JSON.stringify({ name: name, contact: '+91' + phone }));
+    
+    // Show logged in state
+    document.getElementById('loginBtnWrap').style.display = 'none';
+    document.getElementById('userAvatarWrap').style.display = 'block';
+    document.getElementById('navAvatarPic').textContent = name.charAt(0).toUpperCase();
+    document.getElementById('navUserName').textContent = name.split(' ')[0];
+    var drop = document.getElementById('dropUserName');
+    if (drop) drop.textContent = name;
+    
+    // Show success message
+    var forms = document.getElementById('loginForms');
+    var succ = document.getElementById('loginSuccess');
+    if (forms) forms.style.display = 'none';
+    if (succ) {
+      succ.style.display = 'block';
+      var msg = document.getElementById('loginSuccessMsg');
+      if (msg) msg.textContent = '✅ Login successful! Welcome, ' + name + '!';
+    }
+    
+    setTimeout(closeLogin, 2000);
+  }
+
+  // ── DROPDOWN TOGGLE ──
+  function toggleDropdown() {
+    var menu = document.getElementById('userDropMenu');
+    if (menu) menu.classList.toggle('open');
+  }
+
+  // ── LOGIN FUNCTIONS ──
+  function openLogin() {
+    var modal = document.getElementById('loginModal');
+    if (modal) {
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+      var forms = document.getElementById('loginForms');
+      var succ = document.getElementById('loginSuccess');
+      if (forms) forms.style.display = 'block';
+      if (succ) succ.style.display = 'none';
+      var step1 = document.getElementById('phoneStep1');
+      var otpStp = document.getElementById('otpStep');
+      if (step1) step1.style.display = 'block';
+      if (otpStp) otpStp.style.display = 'none';
+    }
+  }
+  function closeLogin() {
+    var modal = document.getElementById('loginModal');
+    if (modal) {
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  }
+  window.openLogin = openLogin;
+  window.closeLogin = closeLogin;
+  window.switchTab = switchTab;
+  window.switchToRegister = switchToRegister;
+  window.sendOtp = sendOtp;
+  window.resendOtp = resendOtp;
+  window.verifyOtp = verifyOtp;
+  window.toggleDropdown = toggleDropdown;
+</script>
+
+<!-- ── THEME / PWA / REMINDER JS ── -->
+<script>
+// ── DARK/LIGHT THEME TOGGLE ──
+var currentTheme = localStorage.getItem('drTheme') || 'dark';
+function applyTheme(theme) {
+  if (theme === 'light') {
+    document.body.classList.add('light-mode');
+    document.getElementById('themeToggle').textContent = '☀️';
+  } else {
+    document.body.classList.remove('light-mode');
+    document.getElementById('themeToggle').textContent = '🌙';
+  }
+  localStorage.setItem('drTheme', theme);
+  currentTheme = theme;
+}
+function toggleTheme() {
+  applyTheme(currentTheme === 'dark' ? 'light' : 'dark');
+}
+applyTheme(currentTheme);
+window.toggleTheme = toggleTheme;
+
+// ── PWA INSTALL ──
+var deferredPrompt = null;
+window.addEventListener('beforeinstallprompt', function(e) {
+  e.preventDefault();
+  deferredPrompt = e;
+  setTimeout(function() {
+    var bar = document.getElementById('pwaBar');
+    if (bar && !localStorage.getItem('pwaDismissed')) bar.classList.add('show');
+  }, 5000);
+});
+window.installPwa = function() {
+  var bar = document.getElementById('pwaBar');
+  if (bar) bar.classList.remove('show');
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    deferredPrompt.userChoice.then(function() { deferredPrompt = null; });
+  }
+};
+window.dismissPwa = function() {
+  var bar = document.getElementById('pwaBar');
+  if (bar) bar.classList.remove('show');
+  localStorage.setItem('pwaDismissed', '1');
+};
+
+// ── SERVICE WORKER for PWA ──
+if ('serviceWorker' in navigator) {
+  var swCode = `
+    self.addEventListener('install', e => self.skipWaiting());
+    self.addEventListener('fetch', e => e.respondWith(fetch(e.request).catch(() => new Response('Offline'))));
+  `;
+  var blob = new Blob([swCode], {type: 'application/javascript'});
+  var swUrl = URL.createObjectURL(blob);
+  navigator.serviceWorker.register(swUrl).catch(function(){});
+}
+
+// ── APPOINTMENT REMINDER ──
+window.openReminder = function() {
+  document.getElementById('reminderModal').classList.add('show');
+};
+window.closeReminder = function() {
+  document.getElementById('reminderModal').classList.remove('show');
+};
+window.sendReminder = function() {
+  var name  = document.getElementById('remName').value.trim();
+  var phone = document.getElementById('remPhone').value.trim();
+  var date  = document.getElementById('remDate').value;
+  var time  = document.getElementById('remTime').value.trim();
+
+  if (!name)  { alert('Kripya naam likhein.'); return; }
+  if (!phone) { alert('Kripya WhatsApp number likhein.'); return; }
+  if (!date)  { alert('Kripya date chunein.'); return; }
+
+  var dateFormatted = new Date(date).toLocaleDateString('hi-IN', {
+    weekday: 'long', year: 'numeric', month: 'long', day: 'numeric'
+  });
+
+  var msg =
+    '🔔 *Appointment Reminder*\n\n' +
+    'Namaskar *' + name + ' ji*! 🙏\n\n' +
+    'Aapki Dr. Asati Clinic mein appointment hai:\n' +
+    '📅 *Date:* ' + dateFormatted + '\n' +
+    (time ? '🕐 *Time:* ' + time + '\n' : '') +
+    '\n📍 *Clinic:*\n' +
+    'Kachewani Bus Stop ya Berdipar, Tiroda\n\n' +
+    '📞 Contact: +91 96376 04170\n\n' +
+    '_Dr. Rajendra Kumar Asati — 24/7 Available_ 🏥';
+
+  // Send reminder to Dr. Asati too
+  var drMsg =
+    '🔔 *New Appointment Reminder Request*\n\n' +
+    '👤 Patient: ' + name + '\n' +
+    '📱 Number: ' + phone + '\n' +
+    '📅 Date: ' + dateFormatted + '\n' +
+    (time ? '🕐 Time: ' + time : '');
+
+  // Open WhatsApp to Dr. Asati with reminder info
+  window.open('https://wa.me/919637604170?text=' + encodeURIComponent(drMsg), '_blank');
+
+  closeReminder();
+
+  // Clear fields
+  ['remName','remPhone','remDate','remTime'].forEach(function(id) {
+    document.getElementById(id).value = '';
+  });
+
+  alert('✅ Reminder request bheja gaya! Dr. Asati aapko confirm karenge.');
+};
+</script>
+
+<!-- ── CHATBOT DEDICATED SCRIPT (runs last, all HTML ready) ── -->
+<script>
+(function() {
+  var chatBtn   = document.getElementById('chatBtn');
+  var chatBox   = document.getElementById('chatBox');
+  var chatInput = document.getElementById('chatInput');
+  var chatMsgs  = document.getElementById('chatMsgs');
+  var chatNotif = document.getElementById('chatNotif');
+  var chatSend  = document.getElementById('chatSend');
+  var userName  = '';
+  var awaitingName = true;
+
+  if (!chatBtn || !chatBox) return;
+
+  function toggleChat() {
+    var isOpen = chatBox.style.display === 'flex';
+    chatBox.style.display = isOpen ? 'none' : 'flex';
+    if (chatNotif) chatNotif.style.display = 'none';
+    if (!isOpen && chatInput) setTimeout(function(){ chatInput.focus(); }, 100);
+  }
+  function closeChat() { chatBox.style.display = 'none'; }
+
+  chatBtn.onclick = toggleChat;
+  window.toggleChat   = toggleChat;
+  window.closeChatBot = closeChat;
+
+  var closeEl = document.querySelector('.chat-close');
+  if (closeEl) closeEl.onclick = closeChat;
+  if (chatSend) chatSend.onclick = sendMsg;
+  if (chatInput) chatInput.onkeydown = function(e) {
+    if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMsg(); }
+  };
+
+  function addMsg(text, from) {
+    var div = document.createElement('div');
+    div.className = 'chat-msg ' + from;
+    div.innerHTML = text;
+    chatMsgs.appendChild(div);
+    chatMsgs.scrollTop = chatMsgs.scrollHeight;
+  }
+
+  function showTyping() {
+    var d = document.createElement('div');
+    d.className = 'chat-msg bot typing-indicator';
+    d.id = 'typingDots';
+    d.innerHTML = '<span style="font-size:0.75rem;color:var(--muted);margin-right:6px;margin-top:2px;">🤔 AI is thinking...</span><span></span><span></span><span></span>';
+    chatMsgs.appendChild(d);
+    chatMsgs.scrollTop = chatMsgs.scrollHeight;
+  }
+  function hideTyping() { var t = document.getElementById('typingDots'); if(t) t.remove(); }
+
+  function sendMsg() {
+    if (!chatInput) return;
+    var q = chatInput.value.trim();
+    if (!q) return;
+    chatInput.value = '';
+    addMsg(q, 'user');
+    showTyping();
+    var delay = 600 + Math.random() * 400;
+    setTimeout(function() {
+      hideTyping();
+      if (awaitingName) {
+        userName = q.split(' ')[0];
+        userName = userName.charAt(0).toUpperCase() + userName.slice(1).toLowerCase();
+        awaitingName = false;
+        addMsg(
+          'Bahut achha, <strong>' + userName + ' ji</strong>! 🙏 Khush hoon aapse milke.<br><br>' +
+          'Main aapki help kar sakta hoon:<br>' +
+          '🩺 Bimari ke baare mein jaankari<br>' +
+          '👨‍⚕️ Dr. Asati ki puri info<br>' +
+          '📅 Appointment booking<br>' +
+          '🌿 Gharelu nuskhe<br>' +
+          '🏥 Clinic location & timing<br><br>' +
+          'Kya jaanna chahte hain <strong>' + userName + ' ji</strong>? 😊', 'bot');
+      } else {
+        addMsg(getReply(q.toLowerCase()), 'bot');
+      }
+    }, delay);
+  }
+
+  setTimeout(function() { if (chatNotif) chatNotif.style.display = 'flex'; }, 3000);
+
+  var N  = function() { return userName ? '<strong>' + userName + ' ji</strong>' : 'aap'; };
+  var C  = function() { return '📞 <a href="tel:+919637604170" style="color:#c8a96e">+91 96376 04170</a> &nbsp;|&nbsp; 💬 <a href="https://wa.me/919637604170" target="_blank" style="color:#c8a96e">WhatsApp</a>'; };
+  var Dr = function() { return '<br><br><span style="font-size:0.78rem;color:#f59e0b;">⚠️ AI can make mistakes — serious problems mein Dr. Asati se zaroor milein.</span>'; };
+  var W  = function(s, q) { return new RegExp(s, 'i').test(q); };
+
+  function getReply(q) {
+    // Typo tolerant search - remove extra spaces, common mistakes
+    var normalize = function(str) {
+      return str
+        .toLowerCase()
+        .replace(/[àáâäã]/g, 'a').replace(/[èéêë]/g, 'e')
+        .replace(/[ìíîï]/g, 'i').replace(/[òóôöõ]/g, 'o')
+        .replace(/[ùúûü]/g, 'u')
+        .replace(/[^a-z0-9\s|]/g, '')  // Remove special chars
+        .replace(/\s+/g, ' ')
+        .trim();
+    };
+    q = normalize(q);
+    
+    // Fuzzy match - handles 1-2 character typos
+    var W = function(patterns, text) {
+      var terms = patterns.split('|');
+      for (var i = 0; i < terms.length; i++) {
+        var term = normalize(terms[i].trim());
+        if (text.indexOf(term) !== -1) return true;
+        // Also check if term exists with 1 char difference
+        if (term.length > 3) {
+          for (var j = 0; j < term.length; j++) {
+            var variantWithout = term.substring(0, j) + term.substring(j + 1);
+            if (text.indexOf(variantWithout) !== -1) return true;
+          }
+        }
+      }
+      return false;
+    };
+
+    // ── DR. ASATI INFO ──
+    if (W('dr asati|rajendra|asati|about doctor|doctor kaun|doctor info|doctor experience|who is doctor|doctor kya|physician kaun|doctor ke bare|doctor ke baare', q))
+      return '👨‍⚕️ <strong>Dr. Rajendra Kumar Asati</strong><br><br>' +
+        '🎓 <strong>Qualification:</strong> General Physician<br>' +
+        '⏳ <strong>Experience:</strong> 27+ saal (Since 1997)<br>' +
+        '🏥 <strong>Speciality:</strong> General Medicine & Family Healthcare<br>' +
+        '👨‍👩‍👧 <strong>Known for:</strong> Patient-first approach, har umar ke liye<br>' +
+        '📍 <strong>Clinic 1:</strong> Kachewani Bus Stop, Tiroda, MH<br>' +
+        '📍 <strong>Clinic 2:</strong> Berdipar, Tiroda, MH<br>' +
+        '🕐 <strong>Timing:</strong> 24/7 — Kabhi bhi aayein<br>' +
+        '📞 <strong>Contact:</strong> +91 96376 04170<br>' +
+        '✉️ <strong>Email:</strong> rajendrakumarasati37@gmail.com<br><br>' +
+        'Tiroda ke hazaron logon ka bharosa — ' + N() + ' bhi nischint aa sakte hain! 🙏';
+
+    if (W('experience|kitne saal|how many years|years experience|kab se|since when', q))
+      return '⏳ ' + N() + ', Dr. Asati ko <strong>27+ saal</strong> ka anubhav hai!<br><br>' +
+        '• 1997 se medical practice shuru<br>' +
+        '• Tiroda mein hazaron patients ka ilaj<br>' +
+        '• Bachche se bujurg — sab ke liye<br>' +
+        '• General Medicine mein maahir<br><br>' +
+        '📞 ' + C();
+
+    if (W('qualification|degree|padhai|education|mbbs|doctor ne kya padha', q))
+      return '🎓 <strong>Dr. Asati ki Qualification:</strong><br><br>' +
+        '• General Physician<br>' +
+        '• 27+ saal ki clinical practice<br>' +
+        '• Speciality: General Medicine & Family Healthcare<br><br>' +
+        '📞 ' + C();
+
+    // ── CLINIC INFO ──
+    if (W('location|address|kahan|clinic|hospital|kachewani|berdipar|tiroda|jagah|where', q))
+      return '📍 <strong>Clinic Locations:</strong><br><br>' +
+        '🏥 <strong>Clinic 1:</strong> Near Kachewani Bus Stop, Tiroda, MH<br>' +
+        '🏥 <strong>Clinic 2:</strong> Berdipar Area, Tiroda, MH<br><br>' +
+        '🕐 Dono clinics: <strong>24/7 Open</strong><br>' +
+        '✅ Sunday | ✅ Holidays | ✅ Emergency<br><br>' +
+        '📞 ' + C();
+
+    if (W('timing|time|hours|open|band|24|kab milenge|kab aaye|kab khulti', q))
+      return '🕐 <strong>Clinic Timings — ' + N() + ':</strong><br><br>' +
+        'Dono clinics <strong>24 ghante, 7 din</strong> open hain!<br>' +
+        '✅ Sunday bhi | ✅ Holidays bhi | ✅ Emergency kabhi bhi<br><br>' +
+        '📞 ' + C();
+
+    if (W('fees|charge|kitna|paisa|cost|rate|consultation|kitne paise', q))
+      return '💰 <strong>Fees — ' + N() + ':</strong><br><br>' +
+        'Dr. Asati bahut affordable rates rakhte hain — sabke liye accessible healthcare!<br><br>' +
+        'Exact fees ke liye call karein:<br>📞 ' + C();
+
+    if (W('contact|phone|number|whatsapp|email|reach|kaise mile', q))
+      return '📞 <strong>Contact Dr. Asati:</strong><br><br>' +
+        '📱 <a href="tel:+919637604170" style="color:#c8a96e">+91 96376 04170</a> (Call anytime)<br>' +
+        '💬 <a href="https://wa.me/919637604170" target="_blank" style="color:#c8a96e">WhatsApp Message</a><br>' +
+        '✉️ rajendrakumarasati37@gmail.com<br>' +
+        '📍 Kachewani Bus Stop & Berdipar, Tiroda';
+
+    if (W('appoint|book|milna|visit|aana|slot|registration|schedule', q))
+      return '📅 <strong>Appointment Book Karein:</strong><br><br>' +
+        '💬 <a href="https://wa.me/919637604170?text=Hello Dr. Asati, I want to book an appointment" target="_blank" style="color:#c8a96e">WhatsApp pe message karein</a><br>' +
+        '📞 <a href="tel:+919637604170" style="color:#c8a96e">+91 96376 04170 pe call karein</a><br><br>' +
+        'Ya website pe form bharo upar! 🏥<br>' +
+        '<strong>24/7 open</strong> — Kachewani & Berdipar';
+
+    if (W('services|kya karte|kya ilaj|speciality|treat|treatment', q))
+      return '🏥 <strong>Dr. Asati ki Services:</strong><br><br>' +
+        '• General check-ups & consultation<br>' +
+        '• Bukhar, infection, flu<br>' +
+        '• BP, Sugar, Thyroid management<br>' +
+        '• Respiratory problems<br>' +
+        '• Stomach & digestion issues<br>' +
+        '• Skin problems<br>' +
+        '• Child & family healthcare<br>' +
+        '• Emergency care 24/7<br>' +
+        '• Prescriptions & referrals<br><br>' +
+        '📞 ' + C();
+
+    // ── GREETINGS ──
+    if (/^(hello|hi+|hey|helo+|hii+|namaskar|namaste|pranam|helo)$/i.test(q.trim()))
+      return 'Hello ' + N() + '! 👋 Kaisa feel ho raha hai aaj?<br><br>Koi health sawaal ya Dr. Asati ke baare mein kuch jaanna hai? Batao! 😊';
+
+    if (W('kaise ho|how are you|kaisa hai|sab theek|how r u', q))
+      return 'Main bilkul theek hoon ' + N() + '! 😊<br>Aap batao — kya takleef hai ya kuch poochhna hai?';
+
+    if (W('good morning|subah|savere|morning', q))
+      return 'Good Morning ' + N() + '! ☀️ Sehatmand aur khushaal din ho!<br><br>Koi health sawaal ho toh batao 😊';
+
+    if (W('good night|good evening|raat|sham|evening', q))
+      return 'Good Night ' + N() + '! 🌙 Achhi neend lein — sehat ke liye zaruri hai!';
+
+    if (W('thanks|shukriya|dhanyawad|thank you|thnx|bahut achha|bahut acha', q))
+      return 'Bahut shukriya ' + N() + '! 🙏 Apna poora khayal rakhein.<br><br>Koi bhi zaroorat ho:<br>📞 ' + C();
+
+    if (W('bye|alvida|goodbye|tata|chal|phir milenge|baad mein', q))
+      return 'Alvida ' + N() + '! 😊 Swasth rahein, khush rahein!<br>Kisi bhi zaroorat pe:<br>📞 ' + C();
+
+    if (W('ok|okay|achha|theek hai|haan|yes|bilkul|samjha|got it', q))
+      return 'Bilkul ' + N() + '! 😊 Aur kuch poochhna ho toh main hoon!';
+
+    if (W('kaun ho|who are you|kya ho|bot|assistant|ai|robot', q))
+      return 'Main Dr. Asati Clinic ka <strong>AI Health Assistant</strong> hoon 🤖<br><br>' +
+        'Main help karta hoon ' + N() + ':<br>' +
+        '🩺 Health symptoms samajhne mein<br>' +
+        '🌿 Gharelu nuskhe batane mein<br>' +
+        '👨‍⚕️ Dr. Asati ke baare mein<br>' +
+        '📅 Appointment lene mein<br><br>' +
+        '<span style="font-size:0.78rem;color:#f59e0b;">⚠️ AI can make mistakes — serious problems mein always Dr. Asati se milein.</span>';
+
+    // ── EMERGENCY ──
+    if (W('emergency|urgent|turant|immediately|help|bachao|serious|critical', q))
+      return '🚨 <strong>EMERGENCY — ' + N() + ':</strong><br><br>' +
+        'Agar serious emergency hai toh:<br><br>' +
+        '📞 <strong>TURANT CALL KAREIN:</strong><br>' + C() + '<br><br>' +
+        '🏥 24/7 available — Kachewani & Berdipar, Tiroda';
+
+    // ── BLEEDING ──
+    if (W('bleed|khoon|blood aana|naak se khoon|wound|ghav|zakhm|cut|chhil gaya', q))
+      return '🩸 <strong>Bleeding / Khoon — ' + N() + ':</strong><br><br>' +
+        '<strong>Minor cut:</strong><br>' +
+        '• Saaf kapde se pressure daalein<br>' +
+        '• Wound ko saaf rakhein<br>' +
+        '• Haath uthayein agar haath pe ho<br><br>' +
+        '<strong>Naak se khoon:</strong><br>' +
+        '• Aage jhukein (peechhe nahi)<br>' +
+        '• 10 minute naak dabaao<br>' +
+        '• Thanda kapda mathe pe<br><br>' +
+        '🚨 Khoon band na ho, zyada ho ya andar se aaye:<br>📞 ' + C() + Dr();
+
+    // ── BURN ──
+    if (W('burn|jalna|jal gaya|jaliya|aag|boiling water|garam se jala', q))
+      return '🔥 <strong>Jalna (Burns) — ' + N() + ':</strong><br><br>' +
+        '✅ 20 min thande paani se dhoyein<br>' +
+        '❌ Barf, toothpaste, butter bilkul nahi<br>' +
+        '❌ Chale ko mat fodein<br>' +
+        '• Saaf kapde se dhako<br><br>' +
+        '🚨 Bada ya gahre jale pe TURANT:<br>📞 ' + C() + Dr();
+
+    // ── SNAKE / ANIMAL BITE ──
+    if (W('snake|saanp|dog bite|kutta kata|animal|janwar|bite|kata|sting|bee|makdi', q))
+      return '🐍 <strong>Saanp/Janwar — ' + N() + ' — EMERGENCY!</strong><br><br>' +
+        '🚨 TURANT hospital jayein!<br><br>' +
+        '<strong>Saanp kata:</strong><br>' +
+        '• Hilna julna bilkul kam karein<br>' +
+        '• Kaata hissa heart se neeche rakhein<br>' +
+        '• Kuch bandh nahi karein<br><br>' +
+        '<strong>Kutta/Jaanwar kata:</strong><br>' +
+        '• 15 min saabun + paani se dhoyein<br>' +
+        '• Anti-rabies injection ZARURI<br><br>' +
+        '📞 TURANT: ' + C();
+
+    // ── FEVER ──
+    if (W('fever|bukhar|bukhaar|temperature|tap|jwara|body hot|garmi lag rahi', q))
+      return '🌡️ <strong>Bukhar (Fever) — ' + N() + ':</strong><br><br>' +
+        '<strong>Lakshan:</strong> Garmi, thakaan, sar dard, body pain<br><br>' +
+        '<strong>Gharelu Upay:</strong><br>' +
+        '• Thanda kapda mathe pe<br>' +
+        '• Khoob paani, ORS, nimbu paani<br>' +
+        '• Halka khana — khichdi, dahi<br>' +
+        '• Zyada kapde nahi, aaram karein<br><br>' +
+        '⚠️ <strong>Doctor se milein agar:</strong><br>' +
+        '• 102°F se upar bukhar<br>' +
+        '• 2 din se zyada rahe<br>' +
+        '• Bachche ko 100°F se upar<br><br>' +
+        '📞 ' + C() + Dr();
+
+    // ── COUGH ──
+    if (W('cough|khansi|khasi|throat|gala|kharash|tonsil|khaansi', q))
+      return '😷 <strong>Khansi / Gala — ' + N() + ':</strong><br><br>' +
+        '<strong>Gharelu Upay:</strong><br>' +
+        '• Namak paani se gargle (din mein 3 baar)<br>' +
+        '• Adrak + shahad + nimbu ki chai<br>' +
+        '• Garam paani ka bhap (steam) lein<br>' +
+        '• Thanda paani, ice cream bilkul nahi<br><br>' +
+        '⚠️ 5 din se zyada rahe ya bukhaar aaye:<br>' +
+        '📞 ' + C() + Dr();
+
+    // ── COLD ──
+    if (W('cold|sardi|nazla|naak|runny nose|flu|jukam|sneezing|chheenk', q))
+      return '🤧 <strong>Sardi / Nazla — ' + N() + ':</strong><br><br>' +
+        '<strong>Gharelu Upay:</strong><br>' +
+        '• Tulsi + adrak + kali mirch ki chai<br>' +
+        '• Steam lein — naak khul jaayegi<br>' +
+        '• Garam soup aur paani piyen<br>' +
+        '• Thande se bilkul bachein<br><br>' +
+        '⚠️ 5 din mein theek na ho:<br>' +
+        '📞 ' + C() + Dr();
+
+    // ── HEADACHE ──
+    if (W('headache|sar dard|sir dard|migraine|sirdard|head pain|matha', q))
+      return '🤕 <strong>Sar Dard — ' + N() + ':</strong><br><br>' +
+        '<strong>Gharelu Upay:</strong><br>' +
+        '• Andheri shant jagah mein aaram karein<br>' +
+        '• Mathe pe lavender ya peppermint oil<br>' +
+        '• Khoob paani piyen<br>' +
+        '• Screen se door rahein<br>' +
+        '• Aankhein band karke 15 min rest<br><br>' +
+        '⚠️ Bahut tez dard, baar baar aaye ya aankhon ke saath ho:<br>' +
+        '📞 ' + C() + Dr();
+
+    // ── STOMACH ──
+    if (W('stomach|pet dard|acidity|gas|bloating|constipation|kabz|indigestion|ulcer|khana nahi pach|pet mein', q))
+      return '🫃 <strong>Pet ki Takleef — ' + N() + ':</strong><br><br>' +
+        '<strong>Gharelu Upay:</strong><br>' +
+        '• Saunf ka paani (fennel water) piyen<br>' +
+        '• Ajwain + namak garam paani se lein<br>' +
+        '• Oily, spicy khana band karein<br>' +
+        '• Chhota chhota 5-6 baar khayen<br>' +
+        '• Khaana khaake turant nahi letein<br><br>' +
+        '📞 ' + C() + Dr();
+
+    // ── DIARRHEA ──
+    if (W('diarrhea|loose motion|motions|ulti|vomit|daast|pech|qay|latrine|potty|dast', q))
+      return '🚽 <strong>Loose Motion / Ulti — ' + N() + ':</strong><br><br>' +
+        '⚠️ <strong>Pehla kaam — Hydration!</strong><br>' +
+        '• ORS sachets (Electral) zaroor lein<br>' +
+        '• Ghar pe: 1L paani + 6 chammach sugar + 1 chammach namak<br>' +
+        '• Chawal ka maad, dahi, banana khayen<br>' +
+        '• Thanda paani, juice, milk bilkul nahi<br><br>' +
+        '🚨 Blood aaye, 24 ghante rahe, ya baby ko ho:<br>' +
+        '📞 ' + C() + Dr();
+
+    // ── BP ──
+    if (W('bp|blood pressure|hypertension|high bp|low bp|pressure high|pressure low', q))
+      return '💉 <strong>Blood Pressure — ' + N() + ':</strong><br><br>' +
+        '<strong>Normal BP:</strong> 120/80 mmHg<br>' +
+        '<strong>High BP:</strong> 140/90 se upar<br>' +
+        '<strong>Low BP:</strong> 90/60 se neeche<br><br>' +
+        '<strong>High BP control:</strong><br>' +
+        '• Namak bilkul kam karein<br>' +
+        '• Roz 30 min walk<br>' +
+        '• BP ki dawa kabhi band nahi<br>' +
+        '• Smoking/alcohol nahi<br><br>' +
+        '<strong>Low BP:</strong><br>' +
+        '• ORS piyen, namak + sugar paani<br>' +
+        '• Let jaayein, pair upar rakhein<br><br>' +
+        '🚨 BP ki dawa sirf doctor ke prescription se lein:<br>' +
+        '📞 ' + C() + Dr();
+
+    // ── DIABETES ──
+    if (W('sugar|diabetes|diabetic|glucose|insulin|hba1c|blood sugar|sugar level', q))
+      return '🍬 <strong>Diabetes / Sugar — ' + N() + ':</strong><br><br>' +
+        '<strong>Normal Sugar:</strong><br>' +
+        '• Khali pet: 70–100 mg/dL<br>' +
+        '• Khaane ke 2 ghante baad: 140 se kam<br><br>' +
+        '<strong>Control Tips:</strong><br>' +
+        '• Meetha, maida, chawal kam karein<br>' +
+        '• Roz 30-45 min exercise zaruri<br>' +
+        '• 5-6 baar chhota khana<br>' +
+        '• Paon ka dhyan — koi ghaav ho toh ignore nahi<br><br>' +
+        '🚨 Sugar ki dawa sirf doctor ke prescription se:<br>' +
+        '📞 ' + C() + Dr();
+
+    // ── HEART ──
+    if (W('heart|dil|chest pain|seena|cardiac|heart attack|angina|palpitation|dhadkan|seene mein dard', q))
+      return '❤️ <strong>Heart / Dil — ' + N() + ':</strong><br><br>' +
+        '🚨 <strong>EMERGENCY SYMPTOMS:</strong><br>' +
+        '• Seene mein tez dard ya jalan<br>' +
+        '• Baaye haath mein dard<br>' +
+        '• Saas lene mein takleef<br>' +
+        '• Chakkar + paseena<br><br>' +
+        '🚨 In symptoms mein TURANT:<br>' +
+        '📞 ' + C() + '<br><br>' +
+        '<strong>Daily Care:</strong><br>' +
+        '• Oily khana kam | Roz walk | Smoking band | BP control';
+
+    // ── ASTHMA ──
+    if (W('asthma|breathing problem|saas fulna|breathe|bronchitis|wheeze|inhaler|lungs|dam|saas ki takleef', q))
+      return '🫁 <strong>Asthma / Saas — ' + N() + ':</strong><br><br>' +
+        '<strong>Lakshan:</strong> Saas fulna, seene mein tightness, raat ko khansi<br><br>' +
+        '<strong>Gharelu Upay:</strong><br>' +
+        '• Adrak + shahad lein<br>' +
+        '• Polluted jagah se bachein<br>' +
+        '• Steam lein<br>' +
+        '• Thanda paani bilkul nahi<br><br>' +
+        '🚨 Inhaler sirf doctor ke guidance se use karein:<br>' +
+        '📞 ' + C() + Dr();
+
+    // ── THYROID ──
+    if (W('thyroid|tsh|thyroxine|goiter|hypothyroid|hyperthyroid|thyroid test', q))
+      return '🦋 <strong>Thyroid — ' + N() + ':</strong><br><br>' +
+        '<strong>Hypothyroid (kam active):</strong><br>' +
+        '• Thakaan, weight badhna, thanda lagana, baal jhadna<br><br>' +
+        '<strong>Hyperthyroid (zyada active):</strong><br>' +
+        '• Weight ghatna, ghabrahana, dil tez dhakna<br><br>' +
+        '⚠️ Thyroid ki dawa kabhi khud se band nahi karni<br>' +
+        '⚠️ TSH test ke liye Dr. Asati se milein:<br>' +
+        '📞 ' + C() + Dr();
+
+    // ── JOINT PAIN ──
+    if (W('joint|jod|arthritis|ghutna|knee|back pain|kamar|spine|body pain|haddi|mochi|moch|sprain', q))
+      return '🦴 <strong>Joint / Body Pain — ' + N() + ':</strong><br><br>' +
+        '<strong>Gharelu Upay:</strong><br>' +
+        '• Garam paani ki bottle se senkein<br>' +
+        '• Haldi wala doodh piyen<br>' +
+        '• Halki stretching aur exercise<br>' +
+        '• Weight zyada ho toh kam karein<br><br>' +
+        '⚠️ Fracture ya bahut tez dard ho:<br>' +
+        '📞 ' + C() + Dr();
+
+    // ── SKIN ──
+    if (W('skin|charm|rash|khujli|itching|allergy|daane|pimple|acne|fungal|ringworm|daad|kharish', q))
+      return '🧴 <strong>Skin Problem — ' + N() + ':</strong><br><br>' +
+        '<strong>Gharelu Upay:</strong><br>' +
+        '• Neem ke paani se dhoyein<br>' +
+        '• Coconut oil — dry skin ke liye<br>' +
+        '• Khujli ho toh nakhun bilkul mat lagayen<br>' +
+        '• Dhoop mein zyada mat rahein<br><br>' +
+        '⚠️ Koi bhi skin problem ke liye Dr. Asati se milein — self-medication nuksandeh:<br>' +
+        '📞 ' + C() + Dr();
+
+    // ── EYE ──
+    if (W('eye|aankh|aankhein|conjunctivitis|pink eye|red eye|aankh lal|vision|aankhon mein', q))
+      return '👁️ <strong>Aankh — ' + N() + ':</strong><br><br>' +
+        '<strong>Gharelu Upay:</strong><br>' +
+        '• Thande saaf paani se dhoyein<br>' +
+        '• Ragdein bilkul nahi<br>' +
+        '• Screen time kam karein<br>' +
+        '• Dhoop mein sunglasses<br><br>' +
+        '⚠️ Eye drops sirf doctor ke prescription se:<br>' +
+        '📞 ' + C() + Dr();
+
+    // ── EAR ──
+    if (W('ear|kaan|kaanon|earache|ear pain|tinnitus|hearing|sone ki aawaaz|kaan dard', q))
+      return '👂 <strong>Kaan ki Takleef — ' + N() + ':</strong><br><br>' +
+        '<strong>Gharelu:</strong><br>' +
+        '• Garam kapde se halka senkein<br>' +
+        '• Kaan mein kuch bhi mat daalen<br>' +
+        '• Paani girne se bachein<br><br>' +
+        '⚠️ Kaan ki dawa sirf doctor ke baad:<br>' +
+        '📞 ' + C() + Dr();
+
+    // ── DENTAL ──
+    if (W('teeth|daant|dental|tooth|toothache|gum|cavity|daant dard|madi|daad', q))
+      return '🦷 <strong>Daant Dard — ' + N() + ':</strong><br><br>' +
+        '<strong>Gharelu Upay:</strong><br>' +
+        '• Laung ka tel (clove oil) lagayen<br>' +
+        '• Namak paani se gargle karein<br>' +
+        '• Thanda/garam se bachein<br><br>' +
+        '⚠️ Daant ke liye dentist ya Dr. Asati se milein:<br>' +
+        '📞 ' + C() + Dr();
+
+    // ── WEAKNESS ──
+    if (W('weak|thaka|kamzori|anemia|khoon ki kami|iron|hemoglobin|fatigue|energy nahi|chakkar|dizzy|behoshi', q))
+      return '😴 <strong>Kamzori / Anemia — ' + N() + ':</strong><br><br>' +
+        '<strong>Khane mein badhayein:</strong><br>' +
+        '• Palak, chukander, khajoor — iron<br>' +
+        '• Anar, orange — Vitamin C<br>' +
+        '• Eggs, dal, paneer — protein<br>' +
+        '• Khoob paani piyen<br><br>' +
+        '⚠️ Blood test ke liye Dr. Asati se milein:<br>' +
+        '📞 ' + C() + Dr();
+
+    // ── SLEEP ──
+    if (W('sleep|neend|insomnia|nahi aati|so nahi|jagta|raat ko jagta', q))
+      return '😴 <strong>Neend Na Aana — ' + N() + ':</strong><br><br>' +
+        '<strong>Gharelu Upay:</strong><br>' +
+        '• Raat ko mobile/TV 1 ghante pehle band karein<br>' +
+        '• Garam doodh + haldi<br>' +
+        '• Roz ek hi time pe soyein<br>' +
+        '• Chamomile chai piyen<br>' +
+        '• Bedroom andhera aur thanda rakhein<br><br>' +
+        '⚠️ Neend ki dawa sirf doctor ke baad:<br>' +
+        '📞 ' + C() + Dr();
+
+    // ── UTI ──
+    if (W('urine|peshab|uti|burning urine|jalaN peshab|urinary|kidney stone|gurda|pathri', q))
+      return '🚽 <strong>Urine / UTI — ' + N() + ':</strong><br><br>' +
+        '<strong>Lakshan:</strong> Jalaan, baar baar aana, paani kam hona<br><br>' +
+        '<strong>Gharelu Upay:</strong><br>' +
+        '• Khoob paani piyen — 8-10 glass<br>' +
+        '• Cranberry juice<br>' +
+        '• Namak kam karein<br><br>' +
+        '⚠️ UTI ki dawa sirf prescription se:<br>' +
+        '📞 ' + C() + Dr();
+
+    // ── PREGNANCY ──
+    if (W('pregnancy|pregnant|garbh|delivery|periods|mahwari|pcod|pcos|women|mahila|masik|mc', q))
+      return '🤱 <strong>Mahila Swasthya — ' + N() + ':</strong><br><br>' +
+        '<strong>Pregnancy mein zaruri:</strong><br>' +
+        '• Folic Acid — pehle 3 mahine<br>' +
+        '• Iron + Calcium tablets (doctor ke anusar)<br>' +
+        '• Regular checkup<br>' +
+        '• Papaya, pineapple bilkul nahi<br><br>' +
+        '⚠️ Pregnancy mein koi bhi dawa khud se bilkul nahi:<br>' +
+        '📞 ' + C() + Dr();
+
+    // ── CHILD ──
+    if (W('baby|bacha|bachche|child|infant|kids|newborn|vaccination|vaccine|tika', q))
+      return '👶 <strong>Bacho ki Sehat — ' + N() + ':</strong><br><br>' +
+        '<strong>Zaruri Vaccines (India):</strong><br>' +
+        '• BCG — birth pe<br>' +
+        '• OPV + Hepatitis B — birth<br>' +
+        '• DPT + Hib — 6, 10, 14 weeks<br>' +
+        '• MMR — 9 mahine<br>' +
+        '• Typhoid — 2 saal<br><br>' +
+        '⚠️ Bacho ko koi bhi dawa sirf doctor ke anusar:<br>' +
+        '📞 ' + C() + Dr();
+
+    // ── MENTAL HEALTH ──
+    if (W('stress|tension|anxiety|depression|ghabrahata|mental|mood|udaas|sad|dara|dar|akela|lonely', q))
+      return '🧠 <strong>Mental Health — ' + N() + ':</strong><br><br>' +
+        '<strong>Aap akele nahi hain!</strong><br><br>' +
+        '<strong>Gharelu Upay:</strong><br>' +
+        '• Roz 30 min walk karein<br>' +
+        '• Meditation aur deep breathing<br>' +
+        '• Apne kisi bharosemand se baat karein<br>' +
+        '• Mobile/social media kam karein<br>' +
+        '• Kuch creative karein — likhna, banana<br><br>' +
+        '⚠️ Zyada ho toh koi sharm nahi — Dr. Asati se milein:<br>' +
+        '📞 ' + C() + Dr();
+
+    // ── DENGUE/MALARIA etc ──
+    if (W('dengue|malaria|typhoid|jaundice|hepatitis|viral fever|covid|corona|infection|sankraman', q))
+      return '🦠 <strong>Serious Infection — ' + N() + ':</strong><br><br>' +
+        '<strong>Dengue:</strong> Platelets ghatna, body rash, tez bukhar<br>' +
+        '<strong>Malaria:</strong> Kaanpke bukhar, thandi lagke bukhar<br>' +
+        '<strong>Typhoid:</strong> Tez bukhar, pet dard, kamzori<br>' +
+        '<strong>Jaundice:</strong> Aankh/skin peeli, kamzori<br><br>' +
+        '⚠️ <strong>In sab ke liye TURANT milein — khud dawa bilkul nahi!</strong><br>' +
+        '📞 ' + C();
+
+    // ── DIET & NUTRITION ──
+    if (W('diet|khaana|nutrition|food|weight|mota|patla|protein|healthy|kya khayen', q))
+      return '🥗 <strong>Diet & Nutrition — ' + N() + ':</strong><br><br>' +
+        '<strong>Healthy Tips:</strong><br>' +
+        '• Har khane mein protein zaroor lein (dal, eggs, paneer)<br>' +
+        '• Hare sabzi roz khayen<br>' +
+        '• Tel, mirch, sugar kam karein<br>' +
+        '• 8-10 glass paani daily<br>' +
+        '• Subah nashta zaroor karein<br>' +
+        '• Raat ka khana halka rakhein<br><br>' +
+        '📞 Personal diet plan ke liye: ' + C();
+
+    // ── EXERCISE ──
+    if (W('exercise|yoga|walk|gym|workout|fitness|vyayam|physical activity', q))
+      return '🏃 <strong>Exercise & Fitness — ' + N() + ':</strong><br><br>' +
+        '<strong>Daily Routine:</strong><br>' +
+        '• Subah 30 min brisk walk<br>' +
+        '• Yoga ya stretching — 15 min<br>' +
+        '• Deep breathing / pranayam<br><br>' +
+        '<strong>Benefits:</strong><br>' +
+        '✅ BP control | ✅ Sugar normal<br>' +
+        '✅ Better mood | ✅ Achhi neend<br>' +
+        '✅ Weight control | ✅ Strong immunity<br><br>' +
+        '📞 ' + C();
+
+    // ── FIRST AID ──
+    if (W('first aid|prathmik|chot|injury|fracture|haddi toot|sprain|moch|accident', q))
+      return '🩹 <strong>First Aid — ' + N() + ':</strong><br><br>' +
+        '<strong>Minor chot/cut:</strong><br>' +
+        '• Saaf paani se dhoyein<br>' +
+        '• Antiseptic (Dettol/Savlon) lagayen<br>' +
+        '• Bandage lagayen<br>' +
+        '• Tetanus injection zaroori agar 5 saal se nahi liya<br><br>' +
+        '<strong>Fracture/Moch:</strong><br>' +
+        '• Hilayein bilkul nahi<br>' +
+        '• Ice pack lagayen (kapde mein)<br>' +
+        '• TURANT doctor ke paas jayein<br><br>' +
+        '📞 ' + C() + Dr();
+
+    // ── PHARMACY/MEDICINE ──
+    if (W('medicine|dawa|tablet|capsule|syrup|pharmacy|kaunsi dawa|dawai|kya lena chahiye', q))
+      return '💊 <strong>' + N() + ', medicines ke baare mein:</strong><br><br>' +
+        '⚠️ Main specific medicines recommend nahi kar sakta — <strong>AI can make mistakes</strong> aur har person ki condition alag hoti hai.<br><br>' +
+        'Sahi aur safe treatment ke liye please Dr. Asati se milein:<br><br>' +
+        '📞 ' + C() + '<br>' +
+        '🏥 24/7 open — Kachewani & Berdipar, Tiroda';
+
+        '🏥 24/7 open — Kachewani & Berdipar, Tiroda';
+
+    // ── LIVER ──
+    if (W('liver|jigar|jaundice|hepatitis|cirrhosis|fatty liver|pet ka upper hissa|piliya|bilirubin|liver fail', q))
+      return '🫀 <strong>Liver / Jigar — ' + N() + ':</strong><br><br>' +
+        '<strong>Warning signs:</strong><br>' +
+        '• Aankh/skin peeli ho jaana (jaundice)<br>' +
+        '• Pet ke upar daayein taraf dard<br>' +
+        '• Bhook nahi lagti, kamzori<br>' +
+        '• Peshab peela, potty safed<br>' +
+        '• Paon mein sujan<br><br>' +
+        '<strong>Causes:</strong><br>' +
+        '• Alcohol zyada peena<br>' +
+        '• Hepatitis A, B, C virus<br>' +
+        '• Fatty liver (oily khana)<br>' +
+        '• Kuch medicines ka side effect<br><br>' +
+        '<strong>Bachao ke liye:</strong><br>' +
+        '• Alcohol bilkul band<br>' +
+        '• Oily/fried khana kam<br>' +
+        '• Hepatitis B vaccine lagwao<br>' +
+        '• Bahar ka khana soch samajh ke<br><br>' +
+        '🚨 Piliya dikhe toh TURANT:<br>📞 ' + C() + Dr();
+
+    // ── KIDNEY ──
+    if (W('kidney|gurda|renal|dialysis|creatinine|uric acid|pathri|kidney stone|kidney fail|nephritis', q))
+      return '🫘 <strong>Kidney / Gurda — ' + N() + ':</strong><br><br>' +
+        '<strong>Warning signs:</strong><br>' +
+        '• Peeth ke peeche ya kamar mein dard<br>' +
+        '• Paon/aankhon mein sujan<br>' +
+        '• Peshab mein jhag ya khoon<br>' +
+        '• Baar baar peshab ya bilkul nahi<br>' +
+        '• Thakaan, bhook nahi<br><br>' +
+        '<strong>Kidney Stone ke liye:</strong><br>' +
+        '• Din mein 3-4 litre paani piyen<br>' +
+        '• Namak, protein, oxalate kam karein<br>' +
+        '• Nimbu paani faydemand hai<br><br>' +
+        '<strong>Kidney protect karo:</strong><br>' +
+        '• BP aur sugar control rakho<br>' +
+        '• Painkiller tablets zyada mat lo<br>' +
+        '• Regular checkup karwao<br><br>' +
+        '🚨 Kidney problem serious hai — TURANT:<br>📞 ' + C() + Dr();
+
+    // ── TB / TUBERCULOSIS ──
+    if (W('tb|tuberculosis|kshay|khansi khoon|chest infection|pulmonary|latent tb|mantoux', q))
+      return '🫁 <strong>TB (Tuberculosis) — ' + N() + ':</strong><br><br>' +
+        '<strong>Symptoms:</strong><br>' +
+        '• 2 hafte se zyada khansi<br>' +
+        '• Khansi mein khoon<br>' +
+        '• Raat ko paseena<br>' +
+        '• Bina wajah weight kam hona<br>' +
+        '• Shaam ko hafka bukhar<br><br>' +
+        '<strong>Zaroori baatein:</strong><br>' +
+        '• TB bilkul theek ho sakti hai — 6 mahine ki dawa se<br>' +
+        '• Dawa beech mein band mat karo — dangerous hai<br>' +
+        '• Sarkari hospital mein FREE ilaj milta hai<br>' +
+        '• Mask pehno, bahar thookna nahi<br><br>' +
+        '⚠️ TB ka ilaj sirf doctor se — khud se kuch nahi:<br>📞 ' + C() + Dr();
+
+    // ── CANCER SYMPTOMS ──
+    if (W('cancer|tumor|gaanth|rasoli|malignant|oncology|blood cancer|breast cancer|lung cancer|symptoms cancer', q))
+      return '🎗️ <strong>Cancer — Warning Signs — ' + N() + ':</strong><br><br>' +
+        '⚠️ <strong>In symptoms ko ignore nahi karo:</strong><br><br>' +
+        '• Bina wajah weight ghata<br>' +
+        '• Sharir mein koi gaanth ya rasoli<br>' +
+        '• Baar baar bukhar aana<br>' +
+        '• Khansi mein khoon<br>' +
+        '• Potty ya peshab mein khoon<br>' +
+        '• Ghav jo theek nahi hota<br>' +
+        '• Bahut thakaan mehsoos hona<br>' +
+        '• Nigalna mushkil hona<br><br>' +
+        '<strong>Cancer prevention:</strong><br>' +
+        '• Smoking/tobacco bilkul band<br>' +
+        '• Alcohol band<br>' +
+        '• Healthy diet<br>' +
+        '• Regular checkup<br><br>' +
+        '🚨 Koi bhi warning sign ho toh TURANT doctor se milo — early detection mein ilaj asaan hai:<br>📞 ' + C() + Dr();
+
+    // ── BACHON KI PROBLEMS ──
+    if (W('colic|shishu rona|baby crying|infant cry|pet dard baby|navel|tummy baby', q))
+      return '👶 <strong>Baby Colic / Shishu Rona — ' + N() + ':</strong><br><br>' +
+        '<strong>Colic kya hai:</strong> 3 hafte se 3 mahine ke bacche din mein 3+ ghante rone<br><br>' +
+        '<strong>Kya karein:</strong><br>' +
+        '• Baby ko goad mein seedha pakdo<br>' +
+        '• Halke haath se peeth aur pet par malish<br>' +
+        '• Garam kapde se pet senko<br>' +
+        '• Doodh pilane ke baad hawa nikalo (burp karwao)<br>' +
+        '• Hing + ghee navel pe lagao (gharelu)<br><br>' +
+        '⚠️ Agar baby ko bukhar bhi ho ya bilkul doodh nahi pi raha:<br>📞 ' + C() + Dr();
+
+    if (W('teething|daant niklna|dant nikal|baby daant|shishu daant|gum pain baby', q))
+      return '🦷 <strong>Teething / Baby ke Daant Niklna — ' + N() + ':</strong><br><br>' +
+        '<strong>Symptoms:</strong> Drooling, gums sujan, irritable, khujli<br><br>' +
+        '<strong>Kya karein:</strong><br>' +
+        '• Saaf ungli se gently gums massage karo<br>' +
+        '• Thanda (not frozen) teething ring do<br>' +
+        '• Thanda dahi ya khana do<br>' +
+        '• Saaf kapde se thook pochho — rash na ho<br><br>' +
+        '⚠️ Teething se tez bukhar nahi hota — bukhar aaye toh Dr. se milo:<br>📞 ' + C() + Dr();
+
+    if (W('diaper rash|nappy rash|baby rash|baby skin|infant rash|baby ke daane|shishu ki skin', q))
+      return '👶 <strong>Baby Rash / Diaper Rash — ' + N() + ':</strong><br><br>' +
+        '<strong>Kya karein:</strong><br>' +
+        '• Diaper baar baar change karo<br>' +
+        '• Nappy area saaf aur dry rakho<br>' +
+        '• Hawa lagao — kuch time bina diaper<br>' +
+        '• Coconut oil ya plain petroleum jelly lagao<br><br>' +
+        '⚠️ Agar rash zyada spread ho ya pus aaye:<br>📞 ' + C() + Dr();
+
+    if (W('baby cold|shishu sardi|infant cough|newborn khasi|baby naak|baby ko khansi', q))
+      return '👶 <strong>Baby Sardi/Khansi — ' + N() + ':</strong><br><br>' +
+        '<strong>Kya karein:</strong><br>' +
+        '• Saline nasal drops (doctor approved) dalo<br>' +
+        '• Room mein humidifier rakho<br>' +
+        '• Chest pe halki malish — coconut oil se<br>' +
+        '• Doodh pilate raho — dehydration nahi honi chahiye<br>' +
+        '• 6 mahine se chhote bacche ko steam nahi<br><br>' +
+        '🚨 6 mahine se chhote baby ko sardi ho TURANT:<br>📞 ' + C() + Dr();
+
+    // ── BUJURGON KI HEALTH ──
+    if (W('arthritis|gathiya|joint old age|bujurg joint|rheumatoid|osteoarthritis|bone old|purana dard', q))
+      return '👴 <strong>Arthritis / Gathiya — Bujurgon ke liye — ' + N() + ':</strong><br><br>' +
+        '<strong>Types:</strong><br>' +
+        '• Osteoarthritis — toot-phoot se<br>' +
+        '• Rheumatoid — immune system se<br><br>' +
+        '<strong>Kya karein:</strong><br>' +
+        '• Halki exercise — swimming, walking best<br>' +
+        '• Hot/cold compress<br>' +
+        '• Weight control<br>' +
+        '• Haldi doodh roz<br>' +
+        '• Omega-3 foods — machli, akhrot<br><br>' +
+        '<strong>Kya nahi:</strong><br>' +
+        '• Zyada rest mat lo — movement zaruri<br>' +
+        '• Stairs zyada mat utaro<br><br>' +
+        '📞 ' + C() + Dr();
+
+    if (W('memory|yaaddasht|bhool|dementia|alzheimer|bujurg bhool|old age memory|brain old', q))
+      return '🧠 <strong>Memory / Yaaddasht — ' + N() + ':</strong><br><br>' +
+        '<strong>Normal vs Concern:</strong><br>' +
+        '• Normal: Kabhi kabhi cheez bhoolna<br>' +
+        '• Concern: Ghar ka rasta bhoolna, log nahi pehchanna<br><br>' +
+        '<strong>Memory badhao:</strong><br>' +
+        '• Roz mental exercise — sudoku, crossword<br>' +
+        '• Proper neend — 7-8 ghante<br>' +
+        '• Social rehna — akele mat raho<br>' +
+        '• Green vegetables, berries, nuts khao<br>' +
+        '• BP aur sugar control rakho<br><br>' +
+        '⚠️ Yaaddasht zyada kharaab ho toh zaroor:<br>📞 ' + C() + Dr();
+
+    if (W('fall|girna|bujurg gira|old age fall|balance old|osteoporosis|haddi kamzor|bone density', q))
+      return '👴 <strong>Girna / Osteoporosis — Bujurgon ke liye — ' + N() + ':</strong><br><br>' +
+        '<strong>Falls rokne ke liye:</strong><br>' +
+        '• Ghar mein non-slip mats lagao<br>' +
+        '• Raat ko light on rakho<br>' +
+        '• Walking stick use karo zaroorat pe<br>' +
+        '• Tight fitting shoes pehno<br>' +
+        '• Balance exercises roz karo<br><br>' +
+        '<strong>Haddi mazboot karo:</strong><br>' +
+        '• Calcium — doodh, dahi, paneer<br>' +
+        '• Vitamin D — subah dhoop mein 20 min<br>' +
+        '• Weight bearing exercise<br><br>' +
+        '🚨 Girne ke baad dard ho ya hilne mein takleef:<br>📞 ' + C() + Dr();
+
+    if (W('prostate|bujurg peshab|old age urine|frequent urine old|nocturia|raat peshab', q))
+      return '👴 <strong>Prostate / Raat ko Baar Baar Peshab — ' + N() + ':</strong><br><br>' +
+        '<strong>Symptoms:</strong><br>' +
+        '• Raat mein 2+ baar uthna peshab ke liye<br>' +
+        '• Peshab ki dhaar kamzor<br>' +
+        '• Shuru hone mein time lagta<br><br>' +
+        '<strong>Kya karein:</strong><br>' +
+        '• Shaam ko paani kam piyo<br>' +
+        '• Caffeine/alcohol avoid karo<br>' +
+        '• Pelvic floor exercises karo<br><br>' +
+        '⚠️ Khoon aaye ya dard ho toh TURANT:<br>📞 ' + C() + Dr();
+
+    // ── DIET PLANS ──
+    if (W('diabetes diet|sugar diet|diabetic khana|sugar mein kya khaye|diabetes food|sugar patient diet', q))
+      return '🍽️ <strong>Diabetes Diet Plan — ' + N() + ':</strong><br><br>' +
+        '✅ <strong>Kha sakte hain:</strong><br>' +
+        '• Sabzi — karela, methi, palak, lauki<br>' +
+        '• Dal, chana, rajma — fibre ke liye<br>' +
+        '• Brown rice, jowar, bajra roti<br>' +
+        '• Eggs, machli, chicken (bina fry)<br>' +
+        '• Nuts — akhrot, badam (kam matra mein)<br>' +
+        '• Green tea, nimbu paani (bina sugar)<br><br>' +
+        '❌ <strong>Avoid karein:</strong><br>' +
+        '• Chawal, maida, sugar<br>' +
+        '• Fruit juices, cold drinks<br>' +
+        '• Fried food, mithai<br>' +
+        '• White bread, biscuits<br><br>' +
+        '📌 <strong>Tips:</strong><br>' +
+        '• Din mein 5-6 baar chhota khana<br>' +
+        '• Khaane ke baad 10 min walk<br>' +
+        '• Plate mein aadhi sabzi, quarter protein, quarter grain<br><br>' +
+        '📞 ' + C() + Dr();
+
+    if (W('bp diet|blood pressure diet|bp mein kya khaye|hypertension food|bp patient khana', q))
+      return '🍽️ <strong>BP Diet Plan — ' + N() + ':</strong><br><br>' +
+        '✅ <strong>Kha sakte hain:</strong><br>' +
+        '• Kela — potassium se bharpur<br>' +
+        '• Lauki, tinda, torai<br>' +
+        '• Lahsun — BP naturally kam karta<br>' +
+        '• Oats, daliya<br>' +
+        '• Dahi, low fat milk<br>' +
+        '• Green leafy vegetables<br><br>' +
+        '❌ <strong>Avoid karein:</strong><br>' +
+        '• Namak — max 1 chammach per din<br>' +
+        '• Pickles, papad, chips<br>' +
+        '• Processed food, packaged snacks<br>' +
+        '• Red meat, fried food<br>' +
+        '• Caffeine, alcohol<br><br>' +
+        '📌 <strong>DASH Diet follow karo — BP ke liye best hai</strong><br><br>' +
+        '📞 ' + C() + Dr();
+
+    if (W('weight loss diet|vajan kam|mota|patla hona|obesity diet|weight loss khana|slim hona', q))
+      return '🍽️ <strong>Weight Loss Diet Plan — ' + N() + ':</strong><br><br>' +
+        '✅ <strong>Kha sakte hain:</strong><br>' +
+        '• Sabzi soup, salad — khaane se pehle<br>' +
+        '• Eggs, chicken, dal — protein<br>' +
+        '• Fruits — apple, papaya, watermelon<br>' +
+        '• Green tea — metabolism badhata hai<br>' +
+        '• Oats, daliya — breakfast mein<br><br>' +
+        '❌ <strong>Avoid karein:</strong><br>' +
+        '• Raat ko heavy khana<br>' +
+        '• Cold drinks, juices<br>' +
+        '• Maida — noodles, bread, biscuit<br>' +
+        '• Fried snacks, mithai<br><br>' +
+        '📌 <strong>Tips:</strong><br>' +
+        '• Paani pehle piyo — khane se 30 min pehle<br>' +
+        '• Chhoti plate use karo<br>' +
+        '• Raat 8 baje ke baad kuch nahi<br>' +
+        '• Roz 45 min walk zaruri<br><br>' +
+        '📞 ' + C() + Dr();
+
+    if (W('heart diet|cardiac diet|dil ka khana|heart patient food|cholesterol diet|cholesterol kam', q))
+      return '🍽️ <strong>Heart Healthy Diet — ' + N() + ':</strong><br><br>' +
+        '✅ <strong>Kha sakte hain:</strong><br>' +
+        '• Machli — omega 3 ke liye (roz nahi)<br>' +
+        '• Akhrot, badam, flaxseeds<br>' +
+        '• Oats — cholesterol kam karta<br>' +
+        '• Olive oil ya mustard oil (kam matra)<br>' +
+        '• Lahsun, pyaaz, haldi<br>' +
+        '• Sabzi, fruits bharpur<br><br>' +
+        '❌ <strong>Avoid karein:</strong><br>' +
+        '• Ghee, butter, vanaspati<br>' +
+        '• Red meat, organ meats<br>' +
+        '• Fried food, fast food<br>' +
+        '• Namak, processed food<br><br>' +
+        '📞 ' + C() + Dr();
+
+    // ── PREGNANCY GUIDE ──
+    if (W('pregnancy diet|garbhavastha khana|pregnant kya khaye|pregnancy food|prenatal diet', q))
+      return '🤰 <strong>Pregnancy Diet — ' + N() + ':</strong><br><br>' +
+        '✅ <strong>Zarur khao:</strong><br>' +
+        '• Doodh, dahi, paneer — calcium<br>' +
+        '• Palak, methi — iron + folate<br>' +
+        '• Dal, rajma — protein<br>' +
+        '• Akhrot, badam — brain development<br>' +
+        '• Fruits — apple, chikoo, anar<br>' +
+        '• Khub paani — 8-10 glass<br><br>' +
+        '❌ <strong>Bilkul avoid karo:</strong><br>' +
+        '• Papaya, pineapple, kaccha anda<br>' +
+        '• Raw meat, bahar ka khana<br>' +
+        '• Caffeine zyada — max 1 cup chai<br>' +
+        '• Alcohol, smoking<br>' +
+        '• Koi bhi dawa bina doctor ke<br><br>' +
+        '📞 ' + C() + Dr();
+
+    if (W('first trimester|pehla mahina pregnancy|1 2 3 month pregnancy|early pregnancy|teen mahine garbh', q))
+      return '🤰 <strong>Pregnancy — Pehle 3 Mahine — ' + N() + ':</strong><br><br>' +
+        '<strong>Kya hota hai:</strong><br>' +
+        '• Ulti/nausea — subah zyada<br>' +
+        '• Thakaan, neend zyada<br>' +
+        '• Stan mein dard<br>' +
+        '• Baar baar peshab<br><br>' +
+        '<strong>Kya karo:</strong><br>' +
+        '• Folic Acid — ZARURI hai<br>' +
+        '• Chhota chhota khana baar baar<br>' +
+        '• Adrak chai — nausea ke liye<br>' +
+        '• Bharpoor aaram lo<br>' +
+        '• Pehla ultrasound karwao<br><br>' +
+        '🚨 Khoon aaye ya tez dard ho TURANT:<br>📞 ' + C() + Dr();
+
+    if (W('second trimester|doosra teen mahina|4 5 6 month pregnancy|mid pregnancy|baby kick', q))
+      return '🤰 <strong>Pregnancy — 4 se 6 Mahine — ' + N() + ':</strong><br><br>' +
+        '<strong>Is doran:</strong><br>' +
+        '• Nausea kam ho jaata hai<br>' +
+        '• Baby movement shuru (5th month)<br>' +
+        '• Pet dikhna shuru<br>' +
+        '• Energy wapas aati hai<br><br>' +
+        '<strong>Kya karo:</strong><br>' +
+        '• Iron + Calcium tablets zarur lo<br>' +
+        '• Anomaly scan karwao (18-20 week)<br>' +
+        '• Halki walk daily<br>' +
+        '• Tight kapde mat pehno<br>' +
+        '• Back support ke liye pregnancy pillow use karo<br><br>' +
+        '📞 ' + C() + Dr();
+
+    if (W('third trimester|aakhri mahine|7 8 9 month pregnancy|delivery kab|due date|labour pain|prasav', q))
+      return '🤰 <strong>Pregnancy — Aakhri 3 Mahine — ' + N() + ':</strong><br><br>' +
+        '<strong>Is doran:</strong><br>' +
+        '• Pet bada hota hai, saas fulti hai<br>' +
+        '• Back pain aur swelling<br>' +
+        '• Neend mushkil<br>' +
+        '• Baby position fix hoti hai<br><br>' +
+        '<strong>Kya karo:</strong><br>' +
+        '• Hospital bag ready rakho<br>' +
+        '• Baby ki movement daily count karo<br>' +
+        '• Side mein so (left side best)<br>' +
+        '• Delivery ke baare mein doctor se poochho<br><br>' +
+        '🚨 Ye ho toh TURANT:<br>' +
+        '• Pani ki theli phate<br>' +
+        '• Tez dard ya khoon aaye<br>' +
+        '• Baby hilna band ho<br>📞 ' + C();
+
+    // ── GHARELU NUSKHE UPGRADE ──
+    if (W('gharelu nuskhe|home remedy|dadi maa|nuskha|ayurvedic|herbal|natural remedy|prakriti ilaj', q))
+      return '🌿 <strong>Gharelu Nuskhe — ' + N() + ':</strong><br><br>' +
+        '🫚 <strong>Haldi (Turmeric):</strong><br>' +
+        '• Doodh mein mila ke piyo — immunity, dard<br>' +
+        '• Ghav pe lagao — antiseptic<br><br>' +
+        '🫚 <strong>Adrak (Ginger):</strong><br>' +
+        '• Chai mein — sardi, khansi, nausea<br>' +
+        '• Ras + shahad — gala kharab<br><br>' +
+        '🫚 <strong>Tulsi:</strong><br>' +
+        '• Kadha (tulsi+adrak+kali mirch) — fever, cold<br>' +
+        '• Ras — immunity booster<br><br>' +
+        '🫚 <strong>Shahad (Honey):</strong><br>' +
+        '• Khansi + nimbu + garam paani<br>' +
+        '• Ghav pe lagao<br>' +
+        '• 1 sal se chhote bacho ko nahi<br><br>' +
+        '🫚 <strong>Lahsun (Garlic):</strong><br>' +
+        '• Subah khaali pet 2 kachchi kali — BP, immunity<br>' +
+        '• Kaan dard mein garm lahsun tel<br><br>' +
+        '🫚 <strong>Nimbu (Lemon):</strong><br>' +
+        '• Garam paani + nimbu + shahad — immunity<br>' +
+        '• Vitamin C ke liye roz piyo<br><br>' +
+        '🫚 <strong>Neem:</strong><br>' +
+        '• Neem paani se nahaana — skin ke liye<br>' +
+        '• Neem datun — daanton ke liye<br><br>' +
+        '🫚 <strong>Ajwain:</strong><br>' +
+        '• Garm paani ke saath — gas, acidity<br>' +
+        '• Potli se senkna — baby colic<br><br>' +
+        '⚠️ Gharelu nuskhe mild problems mein — serious mein Doctor zaruri:<br>📞 ' + C();
+
+    if (W('kadha|kaadha|immunity booster|immunity drink|decoction|ayurvedic drink', q))
+      return '🌿 <strong>Immunity Kadha — ' + N() + ':</strong><br><br>' +
+        '<strong>Ingredients:</strong><br>' +
+        '• Tulsi — 5-6 patte<br>' +
+        '• Adrak — 1 inch tukda<br>' +
+        '• Kali mirch — 4-5 daane<br>' +
+        '• Laung — 2<br>' +
+        '• Dalchini — 1 tukda<br>' +
+        '• Haldi — chutki bhar<br><br>' +
+        '<strong>Banane ka tarika:</strong><br>' +
+        '1. 2 cup paani mein sab daalo<br>' +
+        '2. 10 min ubalo<br>' +
+        '3. Chhan ke piyo<br>' +
+        '4. Shahad mila sakte ho<br><br>' +
+        '📌 Roz subah khali pet piyo — immunity strong hogi!<br><br>' +
+        '📞 ' + C();
+
+    if (W('nimbu pani|lemon water|detox water|infused water|jeera pani|ajwain pani|saunf pani', q))
+      return '🌿 <strong>Health Drinks — ' + N() + ':</strong><br><br>' +
+        '💧 <strong>Nimbu + Shahad + Garm Paani:</strong><br>' +
+        'Subah khali pet — weight loss, immunity, digestion<br><br>' +
+        '💧 <strong>Jeera Paani:</strong><br>' +
+        'Raat bhar jeera bheego, subah piyo — gas, digestion, weight<br><br>' +
+        '💧 <strong>Saunf Paani:</strong><br>' +
+        'Saunf ubaal ke piyo — acidity, gas, fresh breath<br><br>' +
+        '💧 <strong>Methi Paani:</strong><br>' +
+        'Raat bhar methi bheego — sugar control, cholesterol<br><br>' +
+        '💧 <strong>Haldi Doodh:</strong><br>' +
+        'Raat ko piyo — immunity, neend, dard<br><br>' +
+        '📞 ' + C();
+
+    // ── MENTAL HEALTH DEEP ──
+    if (W('panic attack|ghabrahata achanak|heart racing anxiety|panic|breathlessness anxiety', q))
+      return '🧠 <strong>Panic Attack — ' + N() + ':</strong><br><br>' +
+        '<strong>Symptoms:</strong> Dil tez dhakna, saas fulna, dar lagta, chakkar<br><br>' +
+        '<strong>Abhi karo:</strong><br>' +
+        '• 4-7-8 breathing: 4 sec lo, 7 sec roko, 8 sec chodo<br>' +
+        '• Thanda paani piyo ya munh pe dalo<br>' +
+        '• Kisi cheez ko touch karo — ground yourself<br>' +
+        '• Kisi ko paas bulao<br><br>' +
+        '<strong>Prevent karo:</strong><br>' +
+        '• Caffeine kam karo<br>' +
+        '• Regular exercise<br>' +
+        '• Meditation daily<br><br>' +
+        '⚠️ Baar baar aaye toh Dr. se zarur milo:<br>📞 ' + C() + Dr();
+
+    // ── SEXUAL HEALTH ──
+    if (W('sexual health|yaunn|std|sti|safe sex|condom|family planning|birth control|garbh nirodhak', q))
+      return '🏥 <strong>Family Planning / Sexual Health — ' + N() + ':</strong><br><br>' +
+        '<strong>Contraception options:</strong><br>' +
+        '• Condom — STI se bhi bachata hai<br>' +
+        '• OCP (oral pills) — doctor ki salah se<br>' +
+        '• IUD/Copper T — long term<br>' +
+        '• Emergency contraceptive — 72 ghante mein<br><br>' +
+        '<strong>STI symptoms:</strong><br>' +
+        '• Discharge, dard, rash genitals pe<br>' +
+        '• Peshab mein jalaan<br><br>' +
+        '⚠️ Private aur confidential — Dr. Asati se seedha baat karo:<br>📞 ' + C() + Dr();
+
+    // ── FIRST AID ADVANCED ──
+    if (W('drowning|pani mein duba|suffocation|dama ghuta|unconscious|behosh|faint|collapse', q))
+      return '🚨 <strong>EMERGENCY — ' + N() + ':</strong><br><br>' +
+        '🚨 <strong>TURANT 108 ambulance call karo!</strong><br><br>' +
+        '<strong>Behosh ho jaye:</strong><br>' +
+        '• Seedha lita do<br>' +
+        '• Sar ek taraf karo — ulti hone pe<br>' +
+        '• Tight kapde dhile karo<br>' +
+        '• CPR seekha hai toh do<br>' +
+        '• Paani mat pilo<br><br>' +
+        '<strong>Drowning:</strong><br>' +
+        '• Paani se nikaalo turant<br>' +
+        '• CPR shuru karo<br>' +
+        '• Ambulance bulao<br><br>' +
+        '📞 Dr. Asati: ' + C();
+
+    if (W('seizure|epilepsy|mirgi|fits|convulsion|jhatkha|jhatkhe|dora', q))
+      return '🚨 <strong>Fits / Epilepsy — ' + N() + ':</strong><br><br>' +
+        '<strong>Fits ke waqt kya karo:</strong><br>' +
+        '• Zameen pe lita do safely<br>' +
+        '• Sar ke neeche naram cheez rakho<br>' +
+        '• Munh mein kuch mat daalo<br>' +
+        '• Pakad ke mat roko<br>' +
+        '• Cheezein door karo — chot na lage<br>' +
+        '• Time note karo<br><br>' +
+        '<strong>Baad mein:</strong><br>' +
+        '• Side mein lita do<br>' +
+        '• 5 min se zyada rahe toh ambulance<br><br>' +
+        '🚨 TURANT:<br>📞 ' + C() + Dr();
+
+    // ── DEFAULT ──
+    return N() + ', aapka sawaal padha! 🙏<br><br>' +
+      'Is baare mein Dr. Asati se seedha milna best rahega — 27+ saal ke anubhawi expert hain!<br><br>' +
+      '📞 ' + C() + '<br>' +
+      '🏥 24/7 open — Kachewani & Berdipar, Tiroda<br><br>' +
+      '<span style="font-size:0.78rem;color:#f59e0b;">⚠️ AI can make mistakes — serious problems mein always Dr. Asati se milein.</span>';
+  }
+})();
+</script>
+
+
+</body>
+</html>
